@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network-security-config> <base-config cleartextTrafficPermitted="true"> 
+<trust-anchors> <certificates src="system"/> </trust-anchors> </base-config> <domain-config cleartextTrafficPermitted="true"> 
+<domain>177.128.211.4</domain> </domain-config> </network-security-config>		

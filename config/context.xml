@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><Context>
+    <Resource accessToUnderlyingConnectionAllowed="false" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" name="jdbc/saaa" password="kali@19" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="saaa" type="javax.sql.DataSource" url="jdbc:mysql://177.128.211.3:3207/saaa?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false" username="desenv"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" logAbandoned="true" name="jdbc/saaa" password="Imes#UniFTC!2020" profile="PROD" removeAbandoned="false" removeAbandonedTimeout="60" schema="saaa" type="javax.sql.DataSource" url="jdbc:sqlserver://mssqlb01.ftc.br:1433;databaseName=PSAAA" username="sa"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" name="jdbc/PSAAAORACLE" password="kali@19" profile="PROD" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:mysql://177.128.211.3:3207/saaa?createDatabaseIfNotExist=true&amp;useTimezone=true&amp;serverTimezone=UTC&amp;useSSL=false" username="desenv"/>
+    <Profile value="DEV"/>
+    <Profile value="PROD"/>
+    <Resource accessToUnderlyingConnectionAllowed="false" cloudDatabaseKey="" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" logAbandoned="true" name="jdbc/teste" password="Imes#UniFTC!2020" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:sqlserver://mssqlb01.ftc.br:1433;databaseName=PSAAA" username="sa"/>
+</Context>

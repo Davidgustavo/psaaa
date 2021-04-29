@@ -1,0 +1,26 @@
+{
+  "customId": "auth",
+  "queryName": "Autenticar",
+  "screen": "",
+  "sourceType": "entityFullName",
+  "entitySimpleName": "User",
+  "entityFullName": "saaa.entity.User",
+  "query": "select o from User o where o.login \u003d :login",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": false,
+    "POST": false,
+    "PUT": false,
+    "DELETE": false
+  },
+  "events": {},
+  "defaultValues": {},
+  "security": {},
+  "errorHandles": {},
+  "serviceUrl": "api/cronapi/query/auth/"
+}

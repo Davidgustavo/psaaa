@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Localizacao" ruleName="Localizacao" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="0.8333333333333334" scrollx="895.8333740234375" scrolly="147.02385968793607" target="Y*LvNA,$[kGfm`UXW}~Z"/>
+  <block colour="#fca03b" id="Y*LvNA,$[kGfm`UXW}~Z" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-892" y="113">
+    <mutation>
+      <arg name="x1"/>
+      <arg name="y1"/>
+      <arg name="x2"/>
+      <arg name="y2"/>
+      <arg name="x3"/>
+      <arg name="y3"/>
+      <arg name="x4"/>
+      <arg name="y4"/>
+      <arg name="x"/>
+      <arg name="y"/>
+      <arg name="precisao"/>
+    </mutation>
+    <field name="NAME">ValidarCoordenadas</field>
+    <comment h="80" pinned="false" w="160">Função para validar se uma coordenada está dentro de um retângulo</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="y9yOcf0Y%*2[dn;^#jgv" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">vAreaA</field>
+        <value name="VALUE">
+          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="m_JD!LX4jpQ[7MBr]adI" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+            <mutation items="2"/>
+            <field name="OP1">ADD</field>
+            <value name="ARG0">
+              <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="IGtz1Q#9~PJ_b7NdyO?q" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="pM*^h`r,Wf6;n;3E[8TX" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x1</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="n-@.(~:w`GFTG$U%h~9`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y1</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="+$5ajYQB#RGV8J/)e~o{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x2</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="g:w:$[g16zzRXMyXZ))P" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y2</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="GF9yJiPgCc}NS,*{~FX6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x3</field>
+                  </block>
+                </value>
+                <value name="ARG5">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="V]SJ=riLPuA/sRzl:9|(" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="tu?4L2ft:rKM(c.RX/4|" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="u3g5H$P?ZwbF{RTT,i~m" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x1</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="}^+fM2lOLt?$!]D?uWxK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y1</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="dxhtl0(9{w58jcLVywC!" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x4</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="kK4VU:1lbNP/y6!fWH!4" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y4</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="{5pkT00t{+ak/P=+Ubxm" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x3</field>
+                  </block>
+                </value>
+                <value name="ARG5">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="epYi%Hp{)$y=@p-kZ@?1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="@Dd6U-(w%BBwCmn~V8}E" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">vAreaA1</field>
+            <value name="VALUE">
+              <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="S_|4[{/]t9M,KsEN!K@5" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="v@nntfVw~u0l$:)T5-Rz" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="a{2xe|5be5:])(-$EFGW" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="}cZ$jRV%?5gsYq99}7Al" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x1</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="WD}%46R[Y*#3dfM){!?B" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y1</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="MGN8n:-i*F(sTMV/[`H=" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">x2</field>
+                  </block>
+                </value>
+                <value name="ARG5">
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="]G5f{Dqi#|Wu|zr0!J!V" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">y2</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="o.1ByUm-2;2A@9+^E47[" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">vAreaA2</field>
+                <value name="VALUE">
+                  <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="FgP@oG*]`Tt,a7m#(ka$" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                    <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="W[Si;z+G~RJ_9W3jgijS" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">x</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="9,kyysuR/z%xzkPXzo$/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">y</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="o4C{,KIE8//$PQOg_{}3" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">x2</field>
+                      </block>
+                    </value>
+                    <value name="ARG3">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="=A$br%$eDRZp3BR9OhSq" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">y2</field>
+                      </block>
+                    </value>
+                    <value name="ARG4">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="8U9;Cq`y1|e1Skwu]d!A" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">x3</field>
+                      </block>
+                    </value>
+                    <value name="ARG5">
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="kiN=,PH2r^glQ_46sQV," origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">y3</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="4+F~p%Gn#KVf_%tsG~SQ" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">vAreaA3</field>
+                    <value name="VALUE">
+                      <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=":HGoZw)D{7^3G[e1aR,x" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                        <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="fl@oa}sIO-y:fnE2QVT," origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">x</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="@^xP}71#xb[V,*:wdW^c" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">y</field>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="NV2L6rm;*?In3[8F^_ma" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">x3</field>
+                          </block>
+                        </value>
+                        <value name="ARG3">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="C)n[:E,:KB8~H;,jD$3z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">y3</field>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="(qgH@0bT8;.+sCO)VRy@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">x4</field>
+                          </block>
+                        </value>
+                        <value name="ARG5">
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="8Tqk83bFb~^LXHv-h?t=" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">y4</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="QT/biRHde]9)2/wXXjBD" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field name="VAR">vAreaA4</field>
+                        <value name="VALUE">
+                          <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="E2b9r5(OG:hlw^+Ul~X," origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                            <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="V5-2w/)X56ld!t]zGqN]" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">x</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="#6/6w/-ySVXw^j4^{B/H" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">y</field>
+                              </block>
+                            </value>
+                            <value name="ARG2">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="xteI8,|D]1eOg.4P,kcV" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">x1</field>
+                              </block>
+                            </value>
+                            <value name="ARG3">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=":4`@vl5%Dlq6G:?]Hepd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">y1</field>
+                              </block>
+                            </value>
+                            <value name="ARG4">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="B`I)oS#3g0uSU)4c9W.d" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">x4</field>
+                              </block>
+                            </value>
+                            <value name="ARG5">
+                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="=rCC8:9|NDRcj{|q2k{A" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">y4</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="L%(qgA*fK6LFxY#uq+lW" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                            <field name="VAR">vCRetorno</field>
+                            <value name="VALUE">
+                              <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="!?s]j.ZMvdtfqH4}*s/Z" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="~|~$M~i,{^.?Gcm5589*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">vAreaA</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="2yX*JKXE.d;75sRs0JM-" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                    <mutation items="4"/>
+                                    <field name="OP1">ADD</field>
+                                    <field name="OP2">ADD</field>
+                                    <field name="OP3">ADD</field>
+                                    <value name="ARG0">
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="c_I8cIp6cob=3u+w@v:(" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">vAreaA1</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="VLyVg_(Qd!81NG{ow-w)" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">vAreaA2</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG2">
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="*[,xgzLuQaT,;5_TvP@)" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">vAreaA3</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG3">
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="s$SHY92Ka^LMWK{V-79_" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">vAreaA4</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="M~O~Rk]9M^/HeJXgY]PH" origintype="controls_if" output="false" tooltip="function() {&#10;    [native code]&#10;}" type="controls_if">
+                                <value name="IF0">
+                                  <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="$;`tvVI_Rp5jqMYYzwYE" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="g-X|f+i.[(Jps)a).7uy" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field name="VAR">vCRetorno</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="uU~8p#zNe*462nem/(Lw" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean">
+                                        <field name="BOOL">FALSE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="U3S$=u;_S9EEZR}95F/A" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                    <field name="VAR">vAreaA</field>
+                                    <value name="VALUE">
+                                      <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="f]`M}Npo#fWt*O?BbG*e" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                        <mutation items="2"/>
+                                        <field name="OP1">ADD</field>
+                                        <value name="ARG0">
+                                          <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="[g]X4E/T9(w$9E*M.WKr" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                            <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Z3})_/r/JmqY#8^ckpY/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="R`M}.MZE4%V!+qBSP0,e" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG2">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="~UMCAuPcRM*L-)qXt/N`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x2</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG3">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="lQ7A.]j7O{e_D_f$RY7]" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y2</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG4">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="~~I+T,I?QqZ_AM[YT|2T" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x3</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG5">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="L}?ui8-[_J%:JMNM#CQN" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y3</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="hwg-c;@nkB?9d6*mEUnh" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                            <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="4o|{FI3h9geZg-t)sWvm" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="MUnySWnh+:DpX{}`ZeGD" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG2">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="X-HTx9VBnl9hf^}:3NXd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x4</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG3">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="eV[vz@021(n`JLZpcNXT" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y4</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG4">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="w}_oOhrdAIGf`2X|[)#@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x3</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG5">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="v)J={lZ,*;6]25#KarZW" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y3</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="adY1d?MbKtU8pVQ9?.E4" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                        <field name="VAR">vAreaA1</field>
+                                        <value name="VALUE">
+                                          <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="1.Nu3j%.ged?Cae17R66" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                            <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="_L6|/Z=r`51LoO~3,^P#" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                <mutation items="2"/>
+                                                <field name="OP1">ADD</field>
+                                                <value name="ARG0">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="C~Se7B3Hd{%)Ccn8{lig" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">x</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="w+fxRKfGP^)p^c9k%:[F" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">precisao</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="%%}yscG.=QcAD?vl9bS-" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                <mutation items="2"/>
+                                                <field name="OP1">ADD</field>
+                                                <value name="ARG0">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="#Av.G=OlAYW0u/K?u[L6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">y</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="ZVYWvd}D4BEJa!%,RHCe" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">precisao</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ARG2">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="[rN-9#H|w(NdePu9OAl$" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG3">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="O7|BY06-(UPtk(f)2;FX" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG4">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="dP;fdmIO^BO@x_eq^q=a" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">x2</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG5">
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="etPOxdk(8oL~4S6XjFNi" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">y2</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="4B:So]YG`(m8+kT7g4?_" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                            <field name="VAR">vAreaA2</field>
+                                            <value name="VALUE">
+                                              <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="0Hp^,hb]HFJy|a7#B!GA" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="bOeXL`*4iG5TH%l[W#8l" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                    <mutation items="2"/>
+                                                    <field name="OP1">ADD</field>
+                                                    <value name="ARG0">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="$;`l/DRcFkB`y}qns(M`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">x</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="2Ukwh9Kkw|@M::y(+!R8" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">precisao</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="T[{uc@}al8*Y!Iu!Nt{d" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                    <mutation items="2"/>
+                                                    <field name="OP1">ADD</field>
+                                                    <value name="ARG0">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="pb+077g4;^inJVN~|BJs" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">y</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="^w#ny4:Wr7|o{1Us{u)l" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">precisao</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG2">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="phbNoDaX?gDk|xnT8y+i" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">x2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG3">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="b(|3^yL8u:|C:0X$uX(%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">y2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG4">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="~bL3{4JQ#.,5v21Yfmk`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">x3</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG5">
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="%A9[QNfZ8Ri;jg)_K[yE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">y3</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="XL5#I5.O;S)TR%J(kvG|" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                <field name="VAR">vAreaA3</field>
+                                                <value name="VALUE">
+                                                  <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="?%!FN2xv8P/?E(s_(m(;" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                    <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="g@}SJ1YG,B8z$,ATX]q=" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                        <mutation items="2"/>
+                                                        <field name="OP1">ADD</field>
+                                                        <value name="ARG0">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="=C!BVaL[x-7N3vq7GNb-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">x</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="tLn2UM!Qh)Kw+|3fu4Jc" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">precisao</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="KH8poLXRa}zH66cCaZ_s" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                        <mutation items="2"/>
+                                                        <field name="OP1">ADD</field>
+                                                        <value name="ARG0">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="nIV5sB$jl/9;q|7Lg^LB" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">y</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="W[S[bOaz-N.(J^srqwHQ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">precisao</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG2">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Iv[o_Ggs$~fQINCF`[IS" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">x3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG3">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="noF[z0RfeOl=*eekoJc~" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">y3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG4">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="gRYuHoSUfB=7m`34#%I+" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">x4</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG5">
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="kf];yZm6Dr+P2-t;hJ+N" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">y4</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="0LI4e~{7K-CoHt6HH#CS" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                    <field name="VAR">vAreaA4</field>
+                                                    <value name="VALUE">
+                                                      <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="f!w-`9]LQyb+zRI;Dp3S" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                        <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="t[1EaL~LqQtqxyGNYXWV" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                            <mutation items="2"/>
+                                                            <field name="OP1">ADD</field>
+                                                            <value name="ARG0">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Ftm46GPN3/Ln`aa}#BHp" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">x</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="F8(O0j(IyAMW,1KkTq@}" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">precisao</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="%TqKw|UiFoHYMY0/|=6e" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                            <mutation items="2"/>
+                                                            <field name="OP1">ADD</field>
+                                                            <value name="ARG0">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="qMu`~0Dzu(!l]$hCnJu~" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">y</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="uSDcodd4CE.4W8WKW);}" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">precisao</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG2">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="+bFTSmac_w~6D).a@s)/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">x1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG3">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="K}3Lzv.HqQi0DGOG/n6*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">y1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG4">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=",Is9.I?`=AU;m$g8^Reu" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">x4</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG5">
+                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="#[dLv:m#9j^SL!#GO2i@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">y4</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="LvQyF,XWjYrHR~Fu+/f%" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                        <field name="VAR">vCRetorno</field>
+                                                        <value name="VALUE">
+                                                          <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="8L30E/Ul8{%@{9:VUKNs" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                                                            <field name="OP">EQ</field>
+                                                            <value name="A">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="0Xy)Iusi]iVL[R.u|.oy" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">vAreaA</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=")LZ(1f.z_@46Uf2Lb2V@" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                <mutation items="4"/>
+                                                                <field name="OP1">ADD</field>
+                                                                <field name="OP2">ADD</field>
+                                                                <field name="OP3">ADD</field>
+                                                                <value name="ARG0">
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="}Y0JYTpA-:+=V=;q]k5-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">vAreaA1</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="c)2CpdOMsS:o_7VeBtAQ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">vAreaA2</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG2">
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="X]i/xTz(7lW$(?jLrpiU" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">vAreaA3</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG3">
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="^-w:Z(Efrm]OLl)q3yHI" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">vAreaA4</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="*j}#79_c4JvXQfClbEf6" origintype="controls_if" output="false" tooltip="function() {&#10;    [native code]&#10;}" type="controls_if">
+                                                            <value name="IF0">
+                                                              <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="DH!2gqtH-!X.sRE?dWY^" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Rf$%xRYX3LT7w/5X|]9f" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">vCRetorno</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="#H`p1F2`-Y^`zj8)5,QO" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean">
+                                                                    <field name="BOOL">FALSE</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="yrrKgWsNtVlJF[b]0gOc" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                <field name="VAR">vAreaA</field>
+                                                                <value name="VALUE">
+                                                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="onEhz}INIa^oqY!1#UVa" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                    <mutation items="2"/>
+                                                                    <field name="OP1">ADD</field>
+                                                                    <value name="ARG0">
+                                                                      <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="c)V670^%]tSK;6Yct15s" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                        <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                        </mutation>
+                                                                        <value name="ARG0">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="OmDn1!{*lfrqbEpl*h2N" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="}X`cGh,ZC~*9%+6-dx:e" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG2">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="--_VDOWE[QkCG?C:swL#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG3">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="1GU)_)*RbW)JStPZN{t`" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG4">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="E23lAh*qMBmAAw_MM:Gj" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG5">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="mR$mN8THrF?Fmmz_%$?f" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="adSV-BsHG}g)05},ShCb" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                        <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                        </mutation>
+                                                                        <value name="ARG0">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="]/7^U5{!eBVEp4g.(h%h" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="=qs,qSFZO*U7.ZeJy[1y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG2">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="1,wh88lr)F02}g_(wa$T" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x4</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG3">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="0S{?JPH9nfYp_{2h?6mo" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y4</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG4">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="U)^,Stnhg}9naeUB()@f" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG5">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="l#GmmjvluUWJ_$(*v?GX" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y3</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=")_N{3hMIk:oX1#sHw(50" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                    <field name="VAR">vAreaA1</field>
+                                                                    <value name="VALUE">
+                                                                      <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="`*l]}me2^@$vUbk]cQE-" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                        <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                        </mutation>
+                                                                        <value name="ARG0">
+                                                                          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="OHwN!#8D)K_we!f|_u3M" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                            <mutation items="2"/>
+                                                                            <field name="OP1">MINUS</field>
+                                                                            <value name="ARG0">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="/.L~7^^ecW!150O3![j|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">x</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="iIDV|51fK(gILY=3%!*5" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">precisao</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG1">
+                                                                          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="^![s:u9vzbSP9VlV%[]9" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                            <mutation items="2"/>
+                                                                            <field name="OP1">MINUS</field>
+                                                                            <value name="ARG0">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="@oQFP~LuD*(d6WPiT].g" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">y</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Lw2svI:~h4)qs4J*m37y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">precisao</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG2">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="dQ$lRc3rY.^-B+.E:2_X" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG3">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="ePF(#Jb+2E!;RKlc}}|]" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG4">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="0ItoFi9X`}=A5XsE[z3j" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">x2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="ARG5">
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="42P^nikurJG}MF*iDvux" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                            <field name="VAR">y2</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="e=_k}yXM|#OVmDq:LH[}" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                        <field name="VAR">vAreaA2</field>
+                                                                        <value name="VALUE">
+                                                                          <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="kjzXO@d7`:g5G9$KTPTe" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                            <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                            </mutation>
+                                                                            <value name="ARG0">
+                                                                              <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="%_TWe*U|CK-%*u5x#8}l" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                <mutation items="2"/>
+                                                                                <field name="OP1">MINUS</field>
+                                                                                <value name="ARG0">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="8[]E=a$kdH{[nMft2*)!" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">x</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="n^?dpt4f2pFEN,$?$n.4" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">precisao</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG1">
+                                                                              <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="fV$G32bq^xLKwk4Ep:K:" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                <mutation items="2"/>
+                                                                                <field name="OP1">MINUS</field>
+                                                                                <value name="ARG0">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="|?8:.vR$1nL}A?GA*GVg" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">y</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=";;f)KsM@Ets}QV0?K/ce" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">precisao</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG2">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="6_Y?q`S|bZ+gXpqXl7:T" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">x2</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG3">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="hRKWv2=fQ?s(_gDg):hd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">y2</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG4">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="YGWQ,Sei$E73i!#L.Z:k" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">x3</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="ARG5">
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="uY{{vl5Vw*D|.s5~lQqH" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                <field name="VAR">y3</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="MWTcXt6-[-{_p{h]3G+P" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                            <field name="VAR">vAreaA3</field>
+                                                                            <value name="VALUE">
+                                                                              <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="N2Y^v%]3/F@|Le)bVeOt" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                                <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                                </mutation>
+                                                                                <value name="ARG0">
+                                                                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="?EN^cp|,S=1NP~+IkW.}" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                    <mutation items="2"/>
+                                                                                    <field name="OP1">MINUS</field>
+                                                                                    <value name="ARG0">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="*A:hIa.WDX(Y|^vfORR+" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">x</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG1">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="8Z0I30F4l!?Uvx]~@I%h" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">precisao</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG1">
+                                                                                  <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="e!!HzvHD2V(P4E7y@ua/" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                    <mutation items="2"/>
+                                                                                    <field name="OP1">MINUS</field>
+                                                                                    <value name="ARG0">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="pP+fT0ltLzdH$Q!W#}-6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">y</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG1">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="A@sN4v)q$_p.zMC6g8Yi" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">precisao</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG2">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="qiR8f$FW5:;Ji6G,zVmY" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">x3</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG3">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="pD(}0KAV_w!vWT*sYblt" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">y3</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG4">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="kH{,FvT`eq|#}r{!u2x%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">x4</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="ARG5">
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="DtR#U(;Q^:QJrV`fb-%B" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                    <field name="VAR">y4</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="[0KhXS(XaaE2-4E)HVzu" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                                <field name="VAR">vAreaA4</field>
+                                                                                <value name="VALUE">
+                                                                                  <block colour="#fca03b" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="gl3$M?z}Xi#lR)X~{7B!" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CalcularAreaTriangulo&quot; e usa seu retorno." type="procedures_callreturn">
+                                                                                    <mutation name="CalcularAreaTriangulo" return-raw-type="undefined">
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX1"/>
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY1"/>
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX2"/>
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY2"/>
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tX3"/>
+                                                                                      <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="tY3"/>
+                                                                                    </mutation>
+                                                                                    <value name="ARG0">
+                                                                                      <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="w6)woH}MBzXY]R!JM~*?" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                        <mutation items="2"/>
+                                                                                        <field name="OP1">MINUS</field>
+                                                                                        <value name="ARG0">
+                                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="h6[@(Wjx8eY#Zl{HV+R;" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                            <field name="VAR">x</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="ARG1">
+                                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="uUrMlS}ATo]BqA*aV{5g" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                            <field name="VAR">precisao</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG1">
+                                                                                      <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="|h70Ty|9A)=3XU?.Te_^" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                        <mutation items="2"/>
+                                                                                        <field name="OP1">MINUS</field>
+                                                                                        <value name="ARG0">
+                                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="LZbN=$xG!FbFgL2Evm`*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                            <field name="VAR">y</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="ARG1">
+                                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="xCrV7RMEfGJ^yjMMqq^j" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                            <field name="VAR">precisao</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG2">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="u]l:d+KpH/^4x.rIJ2R," origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">x1</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG3">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="Ttged;`#D(,O*-T0gu1^" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">y1</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG4">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="TU,#o1O,9Y$x{}-xc,!@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">x4</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="ARG5">
+                                                                                      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id=",{9)Hj.kZYW,PTL_#9Nm" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                        <field name="VAR">y4</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="U^^a2pizeAL?=-n{YCYF" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                                                    <field name="VAR">vCRetorno</field>
+                                                                                    <value name="VALUE">
+                                                                                      <block colour="#5b80a5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="U/WQ4PlYW*3-n3%3$Hmh" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                                                                                        <field name="OP">EQ</field>
+                                                                                        <value name="A">
+                                                                                          <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="s2E+2P/r%6xt8+$f8t~6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                            <field name="VAR">vAreaA</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block colour="#5b6da5" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="^!bs{yZs-jQ)0_U((.G)" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                                                                                            <mutation items="4"/>
+                                                                                            <field name="OP1">ADD</field>
+                                                                                            <field name="OP2">ADD</field>
+                                                                                            <field name="OP3">ADD</field>
+                                                                                            <value name="ARG0">
+                                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="e*[=YaXXDgo3,1QM+=DA" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                                <field name="VAR">vAreaA1</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="ARG1">
+                                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="5DWp9J1@.nLCg[ybZzp%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                                <field name="VAR">vAreaA2</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="ARG2">
+                                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="_UF}cN=brCfb#^nsF+#V" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                                <field name="VAR">vAreaA3</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="ARG3">
+                                                                                              <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="O%QT#A^aksvGjb9rjK*1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                                                <field name="VAR">vAreaA4</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </statement>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block colour="#0088ee" dependencyby="Y*LvNA,$[kGfm`UXW}~Z" id="ns@g]1Q[3~#WV0k(ltlS" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">vCRetorno</field>
+      </block>
+    </value>
+  </block>
+  <block colour="#fca03b" id="d5u}DAJe5~lQ0tn!Q:(n" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-536" y="117">
+    <mutation>
+      <arg name="tX1"/>
+      <arg name="tY1"/>
+      <arg name="tX2"/>
+      <arg name="tY2"/>
+      <arg name="tX3"/>
+      <arg name="tY3"/>
+    </mutation>
+    <field name="NAME">CalcularAreaTriangulo</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="e!H3M0R]IvT]KyXeDbkQ" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">vTRetorno</field>
+        <value name="VALUE">
+          <block colour="#5b67a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="Yg:29`h*U{T3c||UX0_I" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="U3J(;zCpdKxtW_kIZco[" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">vTSomaCoordenadas</field>
+            <value name="VALUE">
+              <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="x,a*iPRvJXc1hz5g[%UN" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                <mutation items="3"/>
+                <field name="OP1">ADD</field>
+                <field name="OP2">ADD</field>
+                <value name="ARG0">
+                  <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="/7[7~)G7WWi6o)MZx?:A" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">MULTIPLY</field>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="7_j9R9$=saD9qA$:}VTC" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">tX1</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="e!u`w!%j62?FTWCIRx!o" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MINUS</field>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="FbJ}jHF(!|~B[Qxyk.CK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY2</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id=":VZ1gE;PIHXZ6+8q}WSM" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="|P8PDri@`QTFJJ^$38=3" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">MULTIPLY</field>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="jGxw#Sd@@MTg]2;+#ELj" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">tX2</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="S!1g$Ktf}NCzu.@m:t;m" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MINUS</field>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="}3SO;7E8mF2}5QdEri,(" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY3</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="dSWE)Oapebh[ae4mZFCh" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="VMm$RjN}]f:X$!FcK[C%" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">MULTIPLY</field>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="@dm#KKcQBF1G[fTHV5v:" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">tX3</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="/_}_9Ya)N(^qb{Z2zU7j" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                        <mutation items="2"/>
+                        <field name="OP1">MINUS</field>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="SX|LoshUR`@vDzruI%_w" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY1</field>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="6tPUL)I%L`6a?MU*!B?a" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">tY2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="AbIr*EQY]#8hmaEdepq5" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">vTRetorno</field>
+                <value name="VALUE">
+                  <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="d?p4:7,)4.Q#WtDFo,dQ" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                    <mutation items="2"/>
+                    <field name="OP1">DIVIDE</field>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id=")@y=@zj@g.thx@c8-9@M" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">vTSomaCoordenadas</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#5b67a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="]eW+!jdlL)V3|AHRpLB2" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5b80a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="WE=#V/E%_SrSgK#=L*T!" origintype="controls_if" output="false" tooltip="function() {&#10;    [native code]&#10;}" type="controls_if">
+                    <value name="IF0">
+                      <block colour="#5b80a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="j-Z*t.bz=4sr!3LlTJm1" origintype="logic_compare" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="logic_compare">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="q5?-4Croj1ALs;/T3R+." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">vTRetorno</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block colour="#5b67a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="/J.%Gn?Ss;VMctvDQ+3g" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="f7tzR*5p`|9J3zBl))=G" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field name="VAR">vTRetorno</field>
+                        <value name="VALUE">
+                          <block colour="#5b6da5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="NHCg$MrcyYIK$XLx+XVF" origintype="math_arithmetic" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_arithmetic">
+                            <mutation items="2"/>
+                            <field name="OP1">MULTIPLY</field>
+                            <value name="ARG0">
+                              <block colour="#0088ee" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id="(yx2Vh64Q*)O%?j%1{t6" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vTRetorno</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#5b67a5" dependencyby="d5u}DAJe5~lQ0tn!Q:(n" id=":w9FNQ!KS4B?sk]}jfz_" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+                                <field name="NUM">-1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</blockly>

@@ -1,0 +1,28 @@
+{
+  "name": "cronapi-firebase-push",
+  "version": "1.0.0",
+  "authors": [
+    "Cronapp Studio"
+  ],
+  "description": "Firebase push notification dependency from Cronapp",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/CronApp/cronapi-firebase-push",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "c7860d9ea7d51d61535d16fb202b15928bfc892b"
+  },
+  "_source": "https://github.com/CronApp/cronapi-firebase-push.git",
+  "_target": "1.0.0",
+  "_originalSource": "cronapi-firebase-push",
+  "_direct": true
+}

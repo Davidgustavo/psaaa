@@ -1,0 +1,48 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params=""><ion-view cache-view="false" hide-back-button="true" class="pane">
+  <ion-header-bar class="bar bar-header bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar">
+      <div side="left" class="buttons buttons-left header-item">
+        <button class="button button-clear" ng-if="!Aluno.inserting &amp;&amp; !Aluno.editing" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+        <button class="button button-clear" ng-if="Aluno.inserting || Aluno.editing" ng-click="cronapi.screen.changeView('#/app/logged/home', [])" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-ios-arrow-back"></i> </button>
+      </div>
+        <h1 class="title">Atualizar Perfil</h1>
+      <div side="right" class="buttons buttons-right header-item">
+        
+        
+      </div>
+  </ion-header-bar>
+  <ion-content data-component="crn-ion-content" class="has-header">
+    <div class="component-holder ng-binding ng-scope ui-draggable ui-draggable-handle" data-component="crn-datasource" id="crn-datasource-906854">
+      <datasource name="Aluno" entity="saaa.query631819" keys="idAluno" rows-per-page="10" delete-message="Deseja remover?" class="" schema="[{&quot;name&quot;:&quot;idAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;concurso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamadaAutomatica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;foto&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="" parameters="" dependent-lazy-post="" lazy="" checkrequired="" on-after-update="cronapi.client('js.blockly.MudaParaHome.Executar').run()"></datasource>
+    </div>
+	
+    <div crn-datasource="Aluno" class="" ng-hide="Aluno.editing || Aluno.inserting">
+      
+    </div>
+    <div>
+      <form crn-datasource="Aluno">
+        <div class="list" ng-disabled="!Aluno.editing &amp;&amp; !Aluno.inserting">
+            <!-- nomeAbrev begin -->
+            <label for="textinput-nomeAbrev-78831621" class="item item-input item-stacked-label" data-component="crn-input-floating" cronapp-security="enabled : None" ng-show="false">
+              <span class="input-label">Id</span>
+              <input type="text" placeholder="Id" ng-model="Aluno.active.idAluno" id="textinput-nomeAbrev-78831621" name="textinput-nomeAbrev26751" mask="">
+            </label><label for="textinput-nomeAbrev-788" class="item item-input item-stacked-label col-xs-12" data-component="crn-input-floating" cronapp-security="enabled : None">
+              <span class="input-label">Nome</span>
+              <input type="text" placeholder="Nome" ng-model="Aluno.active.nomeAbrev" id="textinput-nomeAbrev-788" name="textinput-nomeAbrev" mask="">
+            </label>
+            <!-- foto begin -->
+              <div class="item item-input item-stacked-label component-holder" data-component="crn-dynamic-image" id="crn-dynamic-image-foto">
+                <label class="input-label">Foto</label>
+                <div class="form-group">
+                  <div dynamic-image="" ng-model="Aluno.active.foto" max-file-size="256KB" class="dynamic-image-container" ng-required="false">
+                    {{"template.crud.clickToAddImage" | translate}}
+                  </div>
+                </div>
+              </div><button class="button button-block button-positive component-holder" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="Aluno.post()" data-component="crn-button" id="crn-button-677957"><i class="ion ion-android-done-all"></i> <span>Salvar</span></button>
+
+            <!-- NtoN  -->
+            <!-- NtoN  end-->
+      
+    </div></form>
+  
+
+</div></ion-content></ion-view></div>

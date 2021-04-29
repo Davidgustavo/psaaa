@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "737858642441",
+    "firebase_url": "https://cronapppsaa.firebaseio.com",
+    "project_id": "cronapppsaa",
+    "storage_bucket": "cronapppsaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737858642441:android:8e29922e94c56fd3",
+        "android_client_info": {
+          "package_name": "io.cronapp.apps.psaaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737858642441-l59liac3g6ddi5rtbobsjqq03bdpi8f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTluiq_KkCpwVr_fyqfYvM1S5X9Id34bY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737858642441-l59liac3g6ddi5rtbobsjqq03bdpi8f6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

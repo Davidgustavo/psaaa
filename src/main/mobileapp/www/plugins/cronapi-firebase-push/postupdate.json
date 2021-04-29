@@ -1,0 +1,8 @@
+{
+	"cordova":
+	[
+	 {
+	 "name":"https://github.com/arnesson/cordova-plugin-firebase.git#pull/1011/head"
+	 }
+	]
+}

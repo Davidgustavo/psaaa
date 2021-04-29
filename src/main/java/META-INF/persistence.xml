@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="saaa" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/teste</non-jta-data-source>
+        <class>saaa.entity.DiarioEletronico</class>
+        <class>saaa.entity.AvaliacaoAula</class>
+        <class>saaa.entity.Disciplina</class>
+        <class>saaa.entity.Turno</class>
+        <class>saaa.entity.BaremaAvaliacao</class>
+        <class>saaa.entity.Chamada</class>
+        <class>saaa.entity.DisciplinaxBarema</class>
+        <class>saaa.entity.Agenda</class>
+        <class>saaa.entity.Turma</class>
+        <class>saaa.entity.ParametrosSistema</class>
+        <class>saaa.entity.PresencaAluno</class>
+        <class>saaa.entity.Aluno</class>
+        <class>saaa.entity.PlanoDidatPedagT</class>
+        <class>saaa.entity.UnidadeFisica</class>
+        <class>saaa.entity.Docente</class>
+        <class>saaa.entity.Qualificacao</class>
+        <class>saaa.entity.ItemBarema</class>
+        <class>saaa.entity.MensagemSistema</class>
+        <class>saaa.entity.Role</class>
+        <class>saaa.entity.TipoNaoproveitamento</class>
+        <class>saaa.entity.UsuarioSistema</class>
+        <class>saaa.entity.CausaNaoAproveitamento</class>
+        <class>saaa.entity.SituacaoUsuario</class>
+        <class>saaa.entity.Matricula</class>
+        <class>saaa.entity.AulaMinistrada</class>
+        <class>saaa.entity.CriterioAvaliacao</class>
+        <class>saaa.entity.Device</class>
+        <class>saaa.entity.Subdisciplina</class>
+        <class>saaa.entity.ItemAvaliacaoAluno</class>
+        <class>saaa.entity.Dependencia</class>
+        <class>saaa.entity.Pessoa</class>
+        <class>saaa.entity.AvaliacaoAluno</class>
+        <class>saaa.entity.LogAcessoSistema</class>
+        <class>saaa.entity.Ocorrencia</class>
+        <class>saaa.entity.User</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+        </properties>
+    </persistence-unit>
+</persistence>

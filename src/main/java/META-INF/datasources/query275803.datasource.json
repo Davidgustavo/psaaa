@@ -1,0 +1,159 @@
+{
+  "customId": "ChamadasAbertasDoAluno",
+  "queryName": "ChamadasAbertasDoAluno",
+  "sourceType": "entityFullName",
+  "entitySimpleName": "Chamada",
+  "entityFullName": "saaa.entity.Chamada",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Chamada",
+        "namespace": "saaa.entity.Chamada",
+        "alias": "c",
+        "name": "Chamada"
+      },
+      {
+        "entity": "Matricula",
+        "namespace": "saaa.entity.Matricula",
+        "alias": "m",
+        "name": "Matricula"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c.idGChamada",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "c.docente.nomeAbrev",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "c.dataHoraInicio",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "m.turma.disciplina.nome",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "c.docente.idNumFunc",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "m.idGMatricula",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "c.aulaMinistrada.agenda.turma.idGTurma",
+          "field": "c.aulaMinistrada.agenda.turma.idGTurma",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": "m.turma.idGTurma",
+          "valueIsField": true
+        },
+        {
+          "id": "c.dataHoraFim",
+          "field": "c.dataHoraFim",
+          "type": "date",
+          "input": "text",
+          "operator": "is_null",
+          "valueIsField": false
+        },
+        {
+          "id": "m.aluno",
+          "field": "m.aluno",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":aluno",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": true,
+    "paginatorAutomatic": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "aluno",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterAlunoLogado",
+        "blocklyClass": "blockly.Acesso",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.Acesso",
+          "sourcePath": "src/main/java/blockly/Acesso.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "IncluirLogAcesso",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "ObterUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterProfessorLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterUsuarioSistemaLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterAlunoLogado",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "POST": true,
+    "PUT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "COUNT": true
+  },
+  "events": {},
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "security": {},
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {},
+  "serviceUrl": "api/cronapi/odata/v2/query275803/"
+}

@@ -1,0 +1,242 @@
+{
+  "customId": "AulasAbertasProfessor",
+  "queryName": "AulasAbertasProfessor",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "AulaMinistrada",
+  "entityFullName": "saaa.entity.AulaMinistrada",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "AulaMinistrada",
+        "namespace": "saaa.entity.AulaMinistrada",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a.idGAulaMinistrada",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.dependencia.idGDependencia",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.dependencia.dependencia",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.docente.nomeAbrev",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.dataHoraAbertura",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "a.agenda.turma.turma",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.agenda.turma.disciplina.nome",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.dependencia.unidadeFisica.nomeAbrev",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.agenda.turma.qtdeAlunos",
+        "type": "double"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "a.dataHoraEncerramento",
+          "field": "a.dataHoraEncerramento",
+          "type": "date",
+          "input": "text",
+          "operator": "is_null",
+          "value": null,
+          "valueIsField": false
+        },
+        {
+          "id": "a.docente",
+          "field": "a.docente",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":docente",
+          "valueIsField": false
+        },
+        {
+          "id": "a.docente2",
+          "field": "a.docente2",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":docente",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "docente",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterProfessorLogado",
+        "blocklyClass": "blockly.Acesso",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.Acesso",
+          "sourcePath": "src/main/java/blockly/Acesso.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "FazerLogoff",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "IncluirLogAcesso",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "ObterUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterProfessorLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterUsuarioSistemaLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterAlunoLogado",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onGetData": null
+  },
+  "defaultValues": {
+    "idGAulaMinistrada": null,
+    "agenda": null,
+    "dataAula": null,
+    "dataHoraAbertura": null,
+    "dataHoraEncerramento": null,
+    "dependencia": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeAbertura": null,
+    "latitudeEncerramento": null,
+    "longitudeAbertura": null,
+    "longitudeEncerramento": null,
+    "observacoes": null,
+    "altitudeAbertura": null,
+    "altitudeEncerramento": null
+  },
+  "defaultValuesProperties": {
+    "idGAulaMinistrada": null,
+    "agenda": null,
+    "dataAula": null,
+    "dataHoraAbertura": null,
+    "dataHoraEncerramento": null,
+    "dependencia": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeAbertura": null,
+    "latitudeEncerramento": null,
+    "longitudeAbertura": null,
+    "longitudeEncerramento": null,
+    "observacoes": null,
+    "altitudeAbertura": null,
+    "altitudeEncerramento": null
+  },
+  "security": {
+    "idGAulaMinistrada": null,
+    "agenda": null,
+    "dataAula": null,
+    "dataHoraAbertura": null,
+    "dataHoraEncerramento": null,
+    "dependencia": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeAbertura": null,
+    "latitudeEncerramento": null,
+    "longitudeAbertura": null,
+    "longitudeEncerramento": null,
+    "observacoes": null,
+    "altitudeAbertura": null,
+    "altitudeEncerramento": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/saaa/query114836/"
+}

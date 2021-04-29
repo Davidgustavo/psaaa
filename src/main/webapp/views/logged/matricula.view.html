@@ -1,0 +1,125 @@
+<h1 class="component-holder text-left h3" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-37332">Matricula</h1>
+
+<datasource data-component="crn-datasource" filter="" name="Matricula" entity="saaa.Matricula" keys="idGMatricula" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;sitMatricula&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+    <div ng-hide="Matricula.inserting || Matricula.editing" data-component="crn-textinput" id="crn-datasource-filter-general37332" class="">
+      <div class="form-group">
+        <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+        <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+      </div>
+    </div>
+
+<div ng-hide="Matricula.editing || Matricula.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+  <cron-grid
+      options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Matricula&quot;,&quot;entity&quot;:&quot;saaa.Matricula&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Matricula&quot;,&quot;customId&quot;:&quot;Matricula&quot;,&quot;name&quot;:&quot;Matricula&quot;,&quot;customQueryName&quot;:&quot;saaa.Matricula&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Matricula&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Matricula&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;sitMatricula&quot;,&quot;headerText&quot;:&quot;Sit Matricula&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}"
+      ng-model="vars.grid37332"
+      class=""
+      style="">
+  </cron-grid>
+</div>
+
+<div data-component="crn-form" id="crn-form-form-Matricula-37332">
+  <div class="form" ng-show="Matricula.editing || Matricula.inserting">
+    <form crn-datasource="Matricula" class="">
+      <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+        <button class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+      </div>
+      <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+        <button class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button>
+        <button class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+      </div>
+      <br/>
+      <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                <div data-component="crn-textinput" id="crn-textinput-sitMatricula-37332" class="">
+                  <div class="form-group">
+                        <label for="textinput-sitMatricula" class="">Sit Matricula</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="20"
+                                            type="text"
+                                            ng-model="Matricula.active.sitMatricula"
+                                            class="form-control k-textbox"
+                                            id="textinput-sitMatricula"
+                                            placeholder="Sit Matricula"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="AlunoCombo" entity="saaa.Aluno" keys="idAluno" schema="[{&quot;name&quot;:&quot;idAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;concurso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-aluno-37332" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-aluno" class="">Aluno</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									required="required"
+                  id="enterprise-dynamic-combobox-aluno"
+                  name="enterprise-dynamic-combobox-aluno"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;AlunoCombo&quot;,&quot;entity&quot;:&quot;saaa.Aluno&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Aluno&quot;,&quot;customId&quot;:&quot;Aluno&quot;,&quot;name&quot;:&quot;AlunoCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Aluno&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Aluno&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;concurso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;concurso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;pessoa_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Aluno&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;nomeAbrev&quot;,&quot;dataValueField&quot;:&quot;idAluno&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="Matricula.active.aluno"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-idGMatricula-37332" class="">
+                  <div class="form-group">
+                        <label for="textinput-idGMatricula" class="">Id G Matricula</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="36"
+                                            type="text"
+                                            ng-model="Matricula.active.idGMatricula"
+                                            class="form-control k-textbox"
+                                            id="textinput-idGMatricula"
+                                            placeholder="Id G Matricula"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="TurmaCombo" entity="saaa.Turma" keys="idGTurma" schema="[{&quot;name&quot;:&quot;idGTurma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;ano&quot;,&quot;type&quot;:&quot;Int16&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;semestre&quot;,&quot;type&quot;:&quot;Byte&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;turno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-turma-37332" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-turma" class="">Turma</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									required="required"
+                  id="enterprise-dynamic-combobox-turma"
+                  name="enterprise-dynamic-combobox-turma"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;TurmaCombo&quot;,&quot;entity&quot;:&quot;saaa.Turma&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Turma&quot;,&quot;customId&quot;:&quot;Turma&quot;,&quot;name&quot;:&quot;TurmaCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Turma&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Turma&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idGTurma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;ano&quot;,&quot;type&quot;:&quot;Int16&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;semestre&quot;,&quot;type&quot;:&quot;Byte&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;turno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idGTurma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;ano&quot;,&quot;type&quot;:&quot;Int16&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;semestre&quot;,&quot;type&quot;:&quot;Byte&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;turno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;disciplina_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Turma&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;turma&quot;,&quot;dataValueField&quot;:&quot;idGTurma&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="Matricula.active.turma"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+        <!-- NtoN  -->
+        <!-- NtoN  end-->
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <!-- OneToN -->
+        <!-- OneToOne  end -->
+      </fieldset>
+    </form>
+    &ensp;
+  </div>
+</div>
+
+

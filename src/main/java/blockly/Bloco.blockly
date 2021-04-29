@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="Bloco" ruleName="Bloco" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="95.76124167896" scrolly="-148.29999999999785" target="+~daL8={x;3w^Y:mx@JF"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-329" y="138">
+    <mutation>
+      <arg name="Entidade&amp;lt;saaa.entity.Agenda&amp;gt;"/>
+    </mutation>
+    <field name="NAME">Executar</field>
+    <comment h="80" pinned="false" w="160">Bloco</comment>
+    <value name="RETURN">
+      <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="_!7XVzGDZZ(gUG_[x5O3" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+        <mutation items="5"/>
+        <value name="ADD0">
+          <block colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Me[-sG6Y@q!4N8Gvg)ci" multilayer="false" namespace="cronapi.dateTime.Operations.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20M%C3%A1scara%20:%20Texto%3C/span%3E%3Cdiv%3E%20M%C3%A1scara.%20Ex:%20dd/MM/yyyy%20HH:mm:ss,%20DateTimeFormat,%20DateFormat%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.dateTime.Operations.formatDateTime}}" return-raw-type="cronapi.Var">
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATETIME" name="Data"/>
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Máscara"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="`v8kf!=PcKg(OGX*9-[P" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                  <arg name="Objeto"/>
+                  <arg name="Caminho a percorrer"/>
+                </mutation>
+                <value name="PARAM0">
+                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="zAag;Jyv~uYhY!qEDU[/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">Entidade&lt;saaa.entity.Agenda&gt;</field>
+                  </block>
+                </value>
+                <value name="PARAM1">
+                  <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^zkYM_=HR237)AxU+I2-" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                    <mutation name="" return-raw-type="undefined"/>
+                    <field name="SELECT">data</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=a~STL/[OK]YJc2M.WM3" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+                <field name="TEXT">dd/MM/yyyy</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rKN*mU:FRS+xwq[NIDj8" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+            <field name="TEXT"> - </field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="8!4NtGFKf^36K%!n;G~$" multilayer="false" namespace="cronapi.dateTime.Operations.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20M%C3%A1scara%20:%20Texto%3C/span%3E%3Cdiv%3E%20M%C3%A1scara.%20Ex:%20dd/MM/yyyy%20HH:mm:ss,%20DateTimeFormat,%20DateFormat%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.dateTime.Operations.formatDateTime}}" return-raw-type="cronapi.Var">
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATETIME" name="Data"/>
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Máscara"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="pV)L08)!go|DBI{1moUj" multilayer="false" namespace="cronapi.dateTime.Operations.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%20com%20Fuso%20Hor%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20M%C3%A1scara%20:%20Texto%3C/span%3E%3Cdiv%3E%20M%C3%A1scara.%20Ex:%20dd/MM/yyyy%20HH:mm:ss,%20DateTimeFormat,%20DateFormat%3C/div%3E%3Cspan%3E%20-%20Fuso%20Hor%C3%A1rio%20:%20Inteiro%3C/span%3E%3Cdiv%3E%20Fuso%20Hor%C3%A1rio.%20Ex:%20-3,%20GMT-03:00%20ou%20America/Sao_Paulo%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.dateTime.Operations.formatDateTime}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATETIME" name="Data"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Máscara"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.LONG" name="Fuso Horário"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="{aj+LXM.gROY1BA)mz2D" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                      <arg name="Objeto"/>
+                      <arg name="Caminho a percorrer"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#DDHT?0cBw?o/c#{Dl^k" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">Entidade&lt;saaa.entity.Agenda&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7-O[TGq$(M_XRWG%;lP|" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                        <mutation name="" return-raw-type="undefined"/>
+                        <field name="SELECT">horaInicio</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=")pZ_[f88!.YbeTw8%i,7" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+                    <field name="TEXT">dd/MM/yyyy HH:mm:ss</field>
+                  </shadow>
+                </value>
+                <value name="ARG2">
+                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="JuxE40Lq`eG_FOLd5t)_" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+                    <field name="NUM">-3</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PzZ2Ucnp5xN1{V:,P@4+" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+                <field name="TEXT">HH:mm</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="zSy0nW5)aHWqE_A~:bw~" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+            <field name="TEXT"> a </field>
+          </block>
+        </value>
+        <value name="ADD4">
+          <block colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="0XLfr6LULL9LA{GTBqQ7" multilayer="false" namespace="cronapi.dateTime.Operations.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20M%C3%A1scara%20:%20Texto%3C/span%3E%3Cdiv%3E%20M%C3%A1scara.%20Ex:%20dd/MM/yyyy%20HH:mm:ss,%20DateTimeFormat,%20DateFormat%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.dateTime.Operations.formatDateTime}}" return-raw-type="cronapi.Var">
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATETIME" name="Data"/>
+              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Máscara"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#7d9137" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="H!mC](Z7]%3dvT}^}iY^" multilayer="false" namespace="cronapi.dateTime.Operations.formatDateTime" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFormatar%20data%20com%20Fuso%20Hor%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20formatar%20data%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%20:%20Data%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20M%C3%A1scara%20:%20Texto%3C/span%3E%3Cdiv%3E%20M%C3%A1scara.%20Ex:%20dd/MM/yyyy%20HH:mm:ss,%20DateTimeFormat,%20DateFormat%3C/div%3E%3Cspan%3E%20-%20Fuso%20Hor%C3%A1rio%20:%20Inteiro%3C/span%3E%3Cdiv%3E%20Fuso%20Hor%C3%A1rio.%20Ex:%20-3,%20GMT-03:00%20ou%20America/Sao_Paulo%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.formatDateTime%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.dateTime.Operations.formatDateTime}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATETIME" name="Data"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Máscara"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.LONG" name="Fuso Horário"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="m0XY3{X$v8g`37X[kP:s" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                      <arg name="Objeto"/>
+                      <arg name="Caminho a percorrer"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="]LOTfLQYCCF?W8i6V9UK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">Entidade&lt;saaa.entity.Agenda&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E|*D%brX+6P?_~-0_^^V" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                        <mutation name="" return-raw-type="undefined"/>
+                        <field name="SELECT">horaFim</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",7UYWfgAhw|[Z79uEH(Q" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+                    <field name="TEXT">dd/MM/yyyy HH:mm:ss</field>
+                  </shadow>
+                </value>
+                <value name="ARG2">
+                  <shadow colour="#5b67a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="APGx/urSMI6ks)S{lg@n" origintype="math_number" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="math_number">
+                    <field name="NUM">-3</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+[(#]Y*l?_/h:V[Tqe?)" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+                <field name="TEXT">HH:mm</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block colour="#995ba5" id="+~daL8={x;3w^Y:mx@JF" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-309" y="178">
+    <mutation>
+      <arg name="Entidade&amp;lt;saaa.entity.Agenda&amp;gt;"/>
+    </mutation>
+    <field name="NAME">GetTurmaQtdeAlunos</field>
+    <comment h="80" pinned="false" w="160">Bloco</comment>
+    <value name="RETURN">
+      <block colour="#5ba58c" dependencyby="+~daL8={x;3w^Y:mx@JF" id="0p$wrPexbUIakLNE~3B3" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+        <mutation items="4"/>
+        <value name="ADD0">
+          <block colour="#c88330" dependencyby="+~daL8={x;3w^Y:mx@JF" id="t^*oJ?9,*D[z!:4.|L7," multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+              <arg name="Objeto"/>
+              <arg name="Caminho a percorrer"/>
+            </mutation>
+            <value name="PARAM0">
+              <block colour="#0088ee" dependencyby="+~daL8={x;3w^Y:mx@JF" id="{;3CAGlrnU{nJ8DYM+I7" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">Entidade&lt;saaa.entity.Agenda&gt;</field>
+              </block>
+            </value>
+            <value name="PARAM1">
+              <block colour="#c88330" dependencyby="+~daL8={x;3w^Y:mx@JF" id="LfL8]T{$A7l%3OU[aXh6" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                <mutation name="" return-raw-type="undefined"/>
+                <field name="SELECT">turma</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD1">
+          <block colour="#5ba593" dependencyby="+~daL8={x;3w^Y:mx@JF" id="?n8yI+!V[mf3X44m8To|" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+            <field name="TEXT"> - </field>
+          </block>
+        </value>
+        <value name="ADD2">
+          <block colour="#c88330" dependencyby="+~daL8={x;3w^Y:mx@JF" id="V:u}a]S;!+*6:,AC~`LM" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+              <arg name="Objeto"/>
+              <arg name="Caminho a percorrer"/>
+            </mutation>
+            <value name="PARAM0">
+              <block colour="#0088ee" dependencyby="+~daL8={x;3w^Y:mx@JF" id=",`jz80Xz$E-]LGc}4tmo" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">Entidade&lt;saaa.entity.Agenda&gt;</field>
+              </block>
+            </value>
+            <value name="PARAM1">
+              <block colour="#c88330" dependencyby="+~daL8={x;3w^Y:mx@JF" id="nhhzYXHZ50WTz4$0oZJS" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                <mutation name="" return-raw-type="undefined"/>
+                <field name="SELECT">qtdeAlunos</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="ADD3">
+          <block colour="#5ba593" dependencyby="+~daL8={x;3w^Y:mx@JF" id="12NOwd#tjpp)qBd}w8`/" origintype="text" output="true" tooltip="function() {&#10;    [native code]&#10;}" type="text">
+            <field name="TEXT"> Alunos</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block colour="#0e9a6c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=Tc}HmdXN!u~^},DPKvt" multilayer="false" namespace="cronapi.conversion.Operations.toString" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EConverter%20para%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20converter%20para%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Conte%C3%BAdo%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.conversion.Operations.toString%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.conversion.Operations.toString%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" x="-112" y="398">
+    <mutation name="{{cronapi.conversion.Operations.toString}}" return-raw-type="cronapi.Var">
+      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Conteúdo"/>
+    </mutation>
+  </block>
+</blockly>

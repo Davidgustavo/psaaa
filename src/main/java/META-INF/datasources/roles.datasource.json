@@ -1,0 +1,29 @@
+{
+  "customId": "roles",
+  "queryName": "Obter Autorização",
+  "screen": "",
+  "sourceType": "entityFullName",
+  "entitySimpleName": "Role",
+  "entityFullName": "saaa.entity.Role",
+  "query": "select o.id from Role o where o.user.login \u003d :login",
+  "queryParamsValues": [
+    {
+      "fieldName": "login",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": false,
+    "POST": false,
+    "PUT": false,
+    "DELETE": false,
+    "FILTER": true
+  },
+  "events": {},
+  "defaultValues": {},
+  "security": {},
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "errorHandles": {},
+  "serviceUrl": "api/cronapi/query/roles/"
+}

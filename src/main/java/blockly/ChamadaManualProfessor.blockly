@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly bpmnAble="false" formTarget="" resourceType="JAVA" ruleDescription="ChamadaManualProfessor" ruleName="ChamadaManualProfessor" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="507" scrolly="-195.00000000000006" target="K?3_p-IWmB/TMJMy@McQ"/>
+  <block colour="#fca03b" id=".lwTeJsQLQj7,+(ynr)L" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-421" y="108">
+    <mutation>
+      <arg name="pIdAulaMinistrada"/>
+      <arg name="pIdMatricula"/>
+      <arg name="pPresenca"/>
+      <arg name="pPresencaValida"/>
+    </mutation>
+    <field name="NAME">EfetuarChamadaAntiga</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="5o^MVav.1w40_iZOC/}d" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">vQueryPresencaAluno</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="Wz7h}z@5$IvXH?efGzCH" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22p%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22p%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22p.chamada.aulaMinistrada.idGAulaMinistrada%22,%22field%22:%22p.chamada.aulaMinistrada.idGAulaMinistrada%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:chamadaAulaMinistradaIdGAulaMinistrada%22,%22valueIsField%22:false%7D,%7B%22id%22:%22p.matricula.idGMatricula%22,%22field%22:%22p.matricula.idGMatricula%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:matriculaIdGMatricula%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22select%20p%20from%20PresencaAluno%20p%20where%20p.chamada.aulaMinistrada.idGAulaMinistrada%20=%20:chamadaAulaMinistradaIdGAulaMinistrada%20AND%20p.matricula.idGMatricula%20=%20:matriculaIdGMatricula%22,%22queryMode%22:%22object%22,%22params%22:%22%5B%5C%22chamadaAulaMinistradaIdGAulaMinistrada%5C%22,%5C%22matriculaIdGMatricula%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="chamadaAulaMinistradaIdGAulaMinistrada"/>
+              <arg name="matriculaIdGMatricula"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="X/+Q{gSk8KN2KjVuQSn$" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">pIdAulaMinistrada</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="gD_Rd?|0K*P7@ZQkZ=G0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">pIdMatricula</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#5b80a5" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="K:EEPc)gJ|-seyK~xNBH" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <mutation elseif="1"/>
+            <value name="IF0">
+              <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="q(=v`J8!5.d|8*L}}SC:" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="PGD!=@N_ZA,jw!+j-c#%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">vQueryPresencaAluno</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="W6`Xg{*}^EzmT7$f|dyZ" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                <value name="VALUE">
+                  <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="mc]Q=ME:*=e!0(6*W#n-" multilayer="false" namespace="cronapi.database.Operations.getActiveData" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20objeto%20da%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20objeto%20da%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getActiveData%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getActiveData%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.database.Operations.getActiveData}}" return-raw-type="cronapi.Var">
+                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="q{`G(Kx^m)-{Ar9e|+y@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">vQueryPresencaAluno</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#c88330" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="%}^v1QQr^1O-%?Z4_RX8" multilayer="false" namespace="cronapi.object.Operations.setObjectField" origintype="procedures_set_field" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDefine%20valor%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20definir%20campo%20do%20objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3Cspan%3E%20-%20Valor%20a%20ser%20definido%20no%20objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_set_field">
+                    <mutation name="{{cronapi.object.Operations.setObjectField}}">
+                      <arg name="Objeto"/>
+                      <arg name="Caminho a percorrer"/>
+                      <arg name="Valor a ser definido no objeto"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="38VVUtb.8?F($ZSyXk,e" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#c88330" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="#WrJOl.OXL_%MLv6$VeO" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                        <mutation name="" return-raw-type="undefined"/>
+                        <field name="SELECT">presencaValida</field>
+                      </block>
+                    </value>
+                    <value name="PARAM2">
+                      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="k*!PY]{Fb%4BQN2]a:DH" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">pPresencaValida</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="n~rhGhuvO{zD.0W+.7FT" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
+                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22update%20PresencaAluno%20set%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22PresencaAluno%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.update}}">
+                          <arg name="PresencaAluno"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="WAY2w`|AZZ59Oo8#h.D/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="IF1">
+              <block colour="#5b80a5" dependencyby=".lwTeJsQLQj7,+(ynr)L" id=":tHXj!=MCFvElh#U9TbB" origintype="logic_operation" output="true" tooltip="Retorna verdadeiro se ambas as entradas forem iguais." type="logic_operation">
+                <mutation items="1"/>
+                <value name="ARG0">
+                  <block colour="#5b80a5" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="ZpguH8FhOPrwnlr_Df]e" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="q}VZ2+E~-!K$74;P+X?t" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">pPresenca</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block colour="#5b80a5" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="_MR48e,3ugkn4wQEZTRQ" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="W+iA9[*.llel=#-MIEDi" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">vQueryChamada</field>
+                <value name="VALUE">
+                  <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="7nhyf*~8$yiOa?wQiBX3" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Chamada%22,%22namespace%22:%22saaa.entity.Chamada%22,%22alias%22:%22c%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22c%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22c.aulaMinistrada.idGAulaMinistrada%22,%22field%22:%22c.aulaMinistrada.idGAulaMinistrada%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:aulaMinistradaIdGAulaMinistrada%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Chamada%22,%22entityFullName%22:%22saaa.entity.Chamada%22,%22filter%22:%22select%20c%20from%20Chamada%20c%20where%20c.aulaMinistrada.idGAulaMinistrada%20=%20:aulaMinistradaIdGAulaMinistrada%22,%22queryMode%22:%22object%22,%22params%22:%22%5B%5C%22aulaMinistradaIdGAulaMinistrada%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                      <arg name="aulaMinistradaIdGAulaMinistrada"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="3jG}G(Y*(;x0M@i~*Yw@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">pIdAulaMinistrada</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id=";X(T$CHuI+Or3z0_Z!H?" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                    <value name="VALUE">
+                      <block colour="#c88330" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="TL2*C5~hy3+;5hA#kur[" multilayer="false" namespace="cronapi.object.Operations.newObject" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20novo%20objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20objeto%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.newObject%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.newObject%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                        <mutation data="%7B%22entity%22:%22saaa.entity.PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22params%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22chamada%5C%22,%5C%22dataHoraRegistro%5C%22,%5C%22docente%5C%22,%5C%22docente2%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22matricula%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22presencaValida%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.object.Operations.newObject}}">
+                          <arg name="NOTSELECTED"/>
+                          <arg name="chamada"/>
+                          <arg name="dataHoraRegistro"/>
+                          <arg name="docente"/>
+                          <arg name="docente2"/>
+                          <arg name="NOTSELECTED"/>
+                          <arg name="NOTSELECTED"/>
+                          <arg name="matricula"/>
+                          <arg name="NOTSELECTED"/>
+                          <arg name="presencaValida"/>
+                          <arg name="NOTSELECTED"/>
+                        </mutation>
+                        <value name="ARG1">
+                          <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="goU7]]h$+!=]L{Ubh0Iu" multilayer="false" namespace="cronapi.database.Operations.getColumn" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20coluna%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20uma%20lista%20de%20dados%20da%20coluna.%20Exemplo:%20lista%20de%20todos%20os%20e-mails%20de%20usu%C3%A1rios%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                            <mutation name="{{cronapi.database.Operations.getColumn}}">
+                              <arg name="Fonte de dados"/>
+                              <arg name="Nome do campo"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="?]p!j,@:.EA3)*v4a)mC" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vQueryChamada</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#db802b" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="[!@p`mI12cTO$H;zrX:!" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                <mutation name="">
+                                  <arg label="c" value="this[0]"/>
+                                  <arg label="c.aulaMinistrada" value="this[0].aulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.agenda" value="this[0].aulaMinistrada.agenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.aula" value="this[0].aulaMinistrada.agenda.aula"/>
+                                  <arg label="c.aulaMinistrada.agenda.data" value="this[0].aulaMinistrada.agenda.data"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia" value="this[0].aulaMinistrada.agenda.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.altitude" value="this[0].aulaMinistrada.agenda.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.dependencia" value="this[0].aulaMinistrada.agenda.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.descricao" value="this[0].aulaMinistrada.agenda.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.idGDependencia" value="this[0].aulaMinistrada.agenda.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.numAlunos" value="this[0].aulaMinistrada.agenda.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.agenda.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.agenda.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.tipoDependencia" value="this[0].aulaMinistrada.agenda.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.unidadeFisica" value="this[0].aulaMinistrada.agenda.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.agenda.descricao" value="this[0].aulaMinistrada.agenda.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.diaSemana" value="this[0].aulaMinistrada.agenda.diaSemana"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente" value="this[0].aulaMinistrada.agenda.docente"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.idNumFunc" value="this[0].aulaMinistrada.agenda.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeCompl" value="this[0].aulaMinistrada.agenda.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2" value="this[0].aulaMinistrada.agenda.docente2"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.idNumFunc" value="this[0].aulaMinistrada.agenda.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeCompl" value="this[0].aulaMinistrada.agenda.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaAbertura" value="this[0].aulaMinistrada.agenda.horaAbertura"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaFim" value="this[0].aulaMinistrada.agenda.horaFim"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaInicio" value="this[0].aulaMinistrada.agenda.horaInicio"/>
+                                  <arg label="c.aulaMinistrada.agenda.idAgenda" value="this[0].aulaMinistrada.agenda.idAgenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.motivoSubstituicao" value="this[0].aulaMinistrada.agenda.motivoSubstituicao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma" value="this[0].aulaMinistrada.agenda.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.ano" value="this[0].aulaMinistrada.agenda.turma.ano"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.disciplina" value="this[0].aulaMinistrada.agenda.turma.disciplina"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.idGTurma" value="this[0].aulaMinistrada.agenda.turma.idGTurma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.semestre" value="this[0].aulaMinistrada.agenda.turma.semestre"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turma" value="this[0].aulaMinistrada.agenda.turma.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turno" value="this[0].aulaMinistrada.agenda.turma.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno" value="this[0].aulaMinistrada.agenda.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.descricao" value="this[0].aulaMinistrada.agenda.turno.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.idTurno" value="this[0].aulaMinistrada.agenda.turno.idTurno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.mneumonico" value="this[0].aulaMinistrada.agenda.turno.mneumonico"/>
+                                  <arg label="c.aulaMinistrada.altitudeAbertura" value="this[0].aulaMinistrada.altitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.altitudeEncerramento" value="this[0].aulaMinistrada.altitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dataAula" value="this[0].aulaMinistrada.dataAula"/>
+                                  <arg label="c.aulaMinistrada.dataHoraAbertura" value="this[0].aulaMinistrada.dataHoraAbertura"/>
+                                  <arg label="c.aulaMinistrada.dataHoraEncerramento" value="this[0].aulaMinistrada.dataHoraEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dependencia" value="this[0].aulaMinistrada.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.altitude" value="this[0].aulaMinistrada.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.dependencia" value="this[0].aulaMinistrada.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.descricao" value="this[0].aulaMinistrada.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.dependencia.idGDependencia" value="this[0].aulaMinistrada.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.numAlunos" value="this[0].aulaMinistrada.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.dependencia.tipoDependencia" value="this[0].aulaMinistrada.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.idUnidFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica.idUnidFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeAbrev" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeCompl" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente" value="this[0].aulaMinistrada.docente"/>
+                                  <arg label="c.aulaMinistrada.docente.idNumFunc" value="this[0].aulaMinistrada.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeAbrev" value="this[0].aulaMinistrada.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeCompl" value="this[0].aulaMinistrada.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente2" value="this[0].aulaMinistrada.docente2"/>
+                                  <arg label="c.aulaMinistrada.docente2.idNumFunc" value="this[0].aulaMinistrada.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeAbrev" value="this[0].aulaMinistrada.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeCompl" value="this[0].aulaMinistrada.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.idGAulaMinistrada" value="this[0].aulaMinistrada.idGAulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.latitudeAbertura" value="this[0].aulaMinistrada.latitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.latitudeEncerramento" value="this[0].aulaMinistrada.latitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.longitudeAbertura" value="this[0].aulaMinistrada.longitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.longitudeEncerramento" value="this[0].aulaMinistrada.longitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.observacoes" value="this[0].aulaMinistrada.observacoes"/>
+                                  <arg label="c.chamadaAutomatica" value="this[0].chamadaAutomatica"/>
+                                  <arg label="c.dataHoraFim" value="this[0].dataHoraFim"/>
+                                  <arg label="c.dataHoraInicio" value="this[0].dataHoraInicio"/>
+                                  <arg label="c.docente" value="this[0].docente"/>
+                                  <arg label="c.docente.idNumFunc" value="this[0].docente.idNumFunc"/>
+                                  <arg label="c.docente.nomeAbrev" value="this[0].docente.nomeAbrev"/>
+                                  <arg label="c.docente.nomeCompl" value="this[0].docente.nomeCompl"/>
+                                  <arg label="c.docente2" value="this[0].docente2"/>
+                                  <arg label="c.docente2.idNumFunc" value="this[0].docente2.idNumFunc"/>
+                                  <arg label="c.docente2.nomeAbrev" value="this[0].docente2.nomeAbrev"/>
+                                  <arg label="c.docente2.nomeCompl" value="this[0].docente2.nomeCompl"/>
+                                  <arg label="c.idGChamada" value="this[0].idGChamada"/>
+                                  <arg label="c.observacao" value="this[0].observacao"/>
+                                </mutation>
+                                <field name="SELECT">this[0].idGChamada</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG2">
+                          <block colour="#7d9137" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="]8qvovy6.g|7@PqSU,X3" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                          </block>
+                        </value>
+                        <value name="ARG3">
+                          <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="moE8]3zOtSH;L^NG=,;B" multilayer="false" namespace="cronapi.database.Operations.getColumn" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20coluna%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20uma%20lista%20de%20dados%20da%20coluna.%20Exemplo:%20lista%20de%20todos%20os%20e-mails%20de%20usu%C3%A1rios%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                            <mutation name="{{cronapi.database.Operations.getColumn}}">
+                              <arg name="Fonte de dados"/>
+                              <arg name="Nome do campo"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="Kv2Y}K=f?*H*SpJt}Y/9" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vQueryChamada</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#db802b" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="eB;rXcUR12WrGm/{Dfq0" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                <mutation name="">
+                                  <arg label="c" value="this[0]"/>
+                                  <arg label="c.aulaMinistrada" value="this[0].aulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.agenda" value="this[0].aulaMinistrada.agenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.aula" value="this[0].aulaMinistrada.agenda.aula"/>
+                                  <arg label="c.aulaMinistrada.agenda.data" value="this[0].aulaMinistrada.agenda.data"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia" value="this[0].aulaMinistrada.agenda.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.altitude" value="this[0].aulaMinistrada.agenda.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.dependencia" value="this[0].aulaMinistrada.agenda.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.descricao" value="this[0].aulaMinistrada.agenda.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.idGDependencia" value="this[0].aulaMinistrada.agenda.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.numAlunos" value="this[0].aulaMinistrada.agenda.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.agenda.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.agenda.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.tipoDependencia" value="this[0].aulaMinistrada.agenda.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.unidadeFisica" value="this[0].aulaMinistrada.agenda.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.agenda.descricao" value="this[0].aulaMinistrada.agenda.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.diaSemana" value="this[0].aulaMinistrada.agenda.diaSemana"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente" value="this[0].aulaMinistrada.agenda.docente"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.idNumFunc" value="this[0].aulaMinistrada.agenda.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeCompl" value="this[0].aulaMinistrada.agenda.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2" value="this[0].aulaMinistrada.agenda.docente2"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.idNumFunc" value="this[0].aulaMinistrada.agenda.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeCompl" value="this[0].aulaMinistrada.agenda.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaAbertura" value="this[0].aulaMinistrada.agenda.horaAbertura"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaFim" value="this[0].aulaMinistrada.agenda.horaFim"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaInicio" value="this[0].aulaMinistrada.agenda.horaInicio"/>
+                                  <arg label="c.aulaMinistrada.agenda.idAgenda" value="this[0].aulaMinistrada.agenda.idAgenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.motivoSubstituicao" value="this[0].aulaMinistrada.agenda.motivoSubstituicao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma" value="this[0].aulaMinistrada.agenda.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.ano" value="this[0].aulaMinistrada.agenda.turma.ano"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.disciplina" value="this[0].aulaMinistrada.agenda.turma.disciplina"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.idGTurma" value="this[0].aulaMinistrada.agenda.turma.idGTurma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.semestre" value="this[0].aulaMinistrada.agenda.turma.semestre"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turma" value="this[0].aulaMinistrada.agenda.turma.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turno" value="this[0].aulaMinistrada.agenda.turma.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno" value="this[0].aulaMinistrada.agenda.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.descricao" value="this[0].aulaMinistrada.agenda.turno.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.idTurno" value="this[0].aulaMinistrada.agenda.turno.idTurno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.mneumonico" value="this[0].aulaMinistrada.agenda.turno.mneumonico"/>
+                                  <arg label="c.aulaMinistrada.altitudeAbertura" value="this[0].aulaMinistrada.altitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.altitudeEncerramento" value="this[0].aulaMinistrada.altitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dataAula" value="this[0].aulaMinistrada.dataAula"/>
+                                  <arg label="c.aulaMinistrada.dataHoraAbertura" value="this[0].aulaMinistrada.dataHoraAbertura"/>
+                                  <arg label="c.aulaMinistrada.dataHoraEncerramento" value="this[0].aulaMinistrada.dataHoraEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dependencia" value="this[0].aulaMinistrada.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.altitude" value="this[0].aulaMinistrada.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.dependencia" value="this[0].aulaMinistrada.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.descricao" value="this[0].aulaMinistrada.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.dependencia.idGDependencia" value="this[0].aulaMinistrada.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.numAlunos" value="this[0].aulaMinistrada.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.dependencia.tipoDependencia" value="this[0].aulaMinistrada.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.idUnidFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica.idUnidFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeAbrev" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeCompl" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente" value="this[0].aulaMinistrada.docente"/>
+                                  <arg label="c.aulaMinistrada.docente.idNumFunc" value="this[0].aulaMinistrada.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeAbrev" value="this[0].aulaMinistrada.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeCompl" value="this[0].aulaMinistrada.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente2" value="this[0].aulaMinistrada.docente2"/>
+                                  <arg label="c.aulaMinistrada.docente2.idNumFunc" value="this[0].aulaMinistrada.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeAbrev" value="this[0].aulaMinistrada.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeCompl" value="this[0].aulaMinistrada.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.idGAulaMinistrada" value="this[0].aulaMinistrada.idGAulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.latitudeAbertura" value="this[0].aulaMinistrada.latitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.latitudeEncerramento" value="this[0].aulaMinistrada.latitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.longitudeAbertura" value="this[0].aulaMinistrada.longitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.longitudeEncerramento" value="this[0].aulaMinistrada.longitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.observacoes" value="this[0].aulaMinistrada.observacoes"/>
+                                  <arg label="c.chamadaAutomatica" value="this[0].chamadaAutomatica"/>
+                                  <arg label="c.dataHoraFim" value="this[0].dataHoraFim"/>
+                                  <arg label="c.dataHoraInicio" value="this[0].dataHoraInicio"/>
+                                  <arg label="c.docente" value="this[0].docente"/>
+                                  <arg label="c.docente.idNumFunc" value="this[0].docente.idNumFunc"/>
+                                  <arg label="c.docente.nomeAbrev" value="this[0].docente.nomeAbrev"/>
+                                  <arg label="c.docente.nomeCompl" value="this[0].docente.nomeCompl"/>
+                                  <arg label="c.docente2" value="this[0].docente2"/>
+                                  <arg label="c.docente2.idNumFunc" value="this[0].docente2.idNumFunc"/>
+                                  <arg label="c.docente2.nomeAbrev" value="this[0].docente2.nomeAbrev"/>
+                                  <arg label="c.docente2.nomeCompl" value="this[0].docente2.nomeCompl"/>
+                                  <arg label="c.idGChamada" value="this[0].idGChamada"/>
+                                  <arg label="c.observacao" value="this[0].observacao"/>
+                                </mutation>
+                                <field name="SELECT">this[0].docente</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG4">
+                          <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id=".^pnZJo@vK.#9$3ark4/" multilayer="false" namespace="cronapi.database.Operations.getColumn" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20coluna%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20uma%20lista%20de%20dados%20da%20coluna.%20Exemplo:%20lista%20de%20todos%20os%20e-mails%20de%20usu%C3%A1rios%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getColumn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                            <mutation name="{{cronapi.database.Operations.getColumn}}">
+                              <arg name="Fonte de dados"/>
+                              <arg name="Nome do campo"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id=".q0Fy~:1#nBIo!{b[`Z@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vQueryChamada</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#db802b" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="35O)L:y`1.Ixm%Mh)a71" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                <mutation name="">
+                                  <arg label="c" value="this[0]"/>
+                                  <arg label="c.aulaMinistrada" value="this[0].aulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.agenda" value="this[0].aulaMinistrada.agenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.aula" value="this[0].aulaMinistrada.agenda.aula"/>
+                                  <arg label="c.aulaMinistrada.agenda.data" value="this[0].aulaMinistrada.agenda.data"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia" value="this[0].aulaMinistrada.agenda.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.altitude" value="this[0].aulaMinistrada.agenda.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.dependencia" value="this[0].aulaMinistrada.agenda.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.descricao" value="this[0].aulaMinistrada.agenda.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.idGDependencia" value="this[0].aulaMinistrada.agenda.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.agenda.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.numAlunos" value="this[0].aulaMinistrada.agenda.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.agenda.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.agenda.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.tipoDependencia" value="this[0].aulaMinistrada.agenda.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.agenda.dependencia.unidadeFisica" value="this[0].aulaMinistrada.agenda.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.agenda.descricao" value="this[0].aulaMinistrada.agenda.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.diaSemana" value="this[0].aulaMinistrada.agenda.diaSemana"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente" value="this[0].aulaMinistrada.agenda.docente"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.idNumFunc" value="this[0].aulaMinistrada.agenda.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente.nomeCompl" value="this[0].aulaMinistrada.agenda.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2" value="this[0].aulaMinistrada.agenda.docente2"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.idNumFunc" value="this[0].aulaMinistrada.agenda.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeAbrev" value="this[0].aulaMinistrada.agenda.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.agenda.docente2.nomeCompl" value="this[0].aulaMinistrada.agenda.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaAbertura" value="this[0].aulaMinistrada.agenda.horaAbertura"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaFim" value="this[0].aulaMinistrada.agenda.horaFim"/>
+                                  <arg label="c.aulaMinistrada.agenda.horaInicio" value="this[0].aulaMinistrada.agenda.horaInicio"/>
+                                  <arg label="c.aulaMinistrada.agenda.idAgenda" value="this[0].aulaMinistrada.agenda.idAgenda"/>
+                                  <arg label="c.aulaMinistrada.agenda.motivoSubstituicao" value="this[0].aulaMinistrada.agenda.motivoSubstituicao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma" value="this[0].aulaMinistrada.agenda.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.ano" value="this[0].aulaMinistrada.agenda.turma.ano"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.disciplina" value="this[0].aulaMinistrada.agenda.turma.disciplina"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.idGTurma" value="this[0].aulaMinistrada.agenda.turma.idGTurma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.semestre" value="this[0].aulaMinistrada.agenda.turma.semestre"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turma" value="this[0].aulaMinistrada.agenda.turma.turma"/>
+                                  <arg label="c.aulaMinistrada.agenda.turma.turno" value="this[0].aulaMinistrada.agenda.turma.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno" value="this[0].aulaMinistrada.agenda.turno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.descricao" value="this[0].aulaMinistrada.agenda.turno.descricao"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.idTurno" value="this[0].aulaMinistrada.agenda.turno.idTurno"/>
+                                  <arg label="c.aulaMinistrada.agenda.turno.mneumonico" value="this[0].aulaMinistrada.agenda.turno.mneumonico"/>
+                                  <arg label="c.aulaMinistrada.altitudeAbertura" value="this[0].aulaMinistrada.altitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.altitudeEncerramento" value="this[0].aulaMinistrada.altitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dataAula" value="this[0].aulaMinistrada.dataAula"/>
+                                  <arg label="c.aulaMinistrada.dataHoraAbertura" value="this[0].aulaMinistrada.dataHoraAbertura"/>
+                                  <arg label="c.aulaMinistrada.dataHoraEncerramento" value="this[0].aulaMinistrada.dataHoraEncerramento"/>
+                                  <arg label="c.aulaMinistrada.dependencia" value="this[0].aulaMinistrada.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.altitude" value="this[0].aulaMinistrada.dependencia.altitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.dependencia" value="this[0].aulaMinistrada.dependencia.dependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.descricao" value="this[0].aulaMinistrada.dependencia.descricao"/>
+                                  <arg label="c.aulaMinistrada.dependencia.idGDependencia" value="this[0].aulaMinistrada.dependencia.idGDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto1" value="this[0].aulaMinistrada.dependencia.latitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto2" value="this[0].aulaMinistrada.dependencia.latitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto3" value="this[0].aulaMinistrada.dependencia.latitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.latitudeCanto4" value="this[0].aulaMinistrada.dependencia.latitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto1" value="this[0].aulaMinistrada.dependencia.longitudeCanto1"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto2" value="this[0].aulaMinistrada.dependencia.longitudeCanto2"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto3" value="this[0].aulaMinistrada.dependencia.longitudeCanto3"/>
+                                  <arg label="c.aulaMinistrada.dependencia.longitudeCanto4" value="this[0].aulaMinistrada.dependencia.longitudeCanto4"/>
+                                  <arg label="c.aulaMinistrada.dependencia.numAlunos" value="this[0].aulaMinistrada.dependencia.numAlunos"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoAltitude" value="this[0].aulaMinistrada.dependencia.precisaoAltitude"/>
+                                  <arg label="c.aulaMinistrada.dependencia.precisaoLatLong" value="this[0].aulaMinistrada.dependencia.precisaoLatLong"/>
+                                  <arg label="c.aulaMinistrada.dependencia.tipoDependencia" value="this[0].aulaMinistrada.dependencia.tipoDependencia"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.idUnidFisica" value="this[0].aulaMinistrada.dependencia.unidadeFisica.idUnidFisica"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeAbrev" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.dependencia.unidadeFisica.nomeCompl" value="this[0].aulaMinistrada.dependencia.unidadeFisica.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente" value="this[0].aulaMinistrada.docente"/>
+                                  <arg label="c.aulaMinistrada.docente.idNumFunc" value="this[0].aulaMinistrada.docente.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeAbrev" value="this[0].aulaMinistrada.docente.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente.nomeCompl" value="this[0].aulaMinistrada.docente.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.docente2" value="this[0].aulaMinistrada.docente2"/>
+                                  <arg label="c.aulaMinistrada.docente2.idNumFunc" value="this[0].aulaMinistrada.docente2.idNumFunc"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeAbrev" value="this[0].aulaMinistrada.docente2.nomeAbrev"/>
+                                  <arg label="c.aulaMinistrada.docente2.nomeCompl" value="this[0].aulaMinistrada.docente2.nomeCompl"/>
+                                  <arg label="c.aulaMinistrada.idGAulaMinistrada" value="this[0].aulaMinistrada.idGAulaMinistrada"/>
+                                  <arg label="c.aulaMinistrada.latitudeAbertura" value="this[0].aulaMinistrada.latitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.latitudeEncerramento" value="this[0].aulaMinistrada.latitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.longitudeAbertura" value="this[0].aulaMinistrada.longitudeAbertura"/>
+                                  <arg label="c.aulaMinistrada.longitudeEncerramento" value="this[0].aulaMinistrada.longitudeEncerramento"/>
+                                  <arg label="c.aulaMinistrada.observacoes" value="this[0].aulaMinistrada.observacoes"/>
+                                  <arg label="c.chamadaAutomatica" value="this[0].chamadaAutomatica"/>
+                                  <arg label="c.dataHoraFim" value="this[0].dataHoraFim"/>
+                                  <arg label="c.dataHoraInicio" value="this[0].dataHoraInicio"/>
+                                  <arg label="c.docente" value="this[0].docente"/>
+                                  <arg label="c.docente.idNumFunc" value="this[0].docente.idNumFunc"/>
+                                  <arg label="c.docente.nomeAbrev" value="this[0].docente.nomeAbrev"/>
+                                  <arg label="c.docente.nomeCompl" value="this[0].docente.nomeCompl"/>
+                                  <arg label="c.docente2" value="this[0].docente2"/>
+                                  <arg label="c.docente2.idNumFunc" value="this[0].docente2.idNumFunc"/>
+                                  <arg label="c.docente2.nomeAbrev" value="this[0].docente2.nomeAbrev"/>
+                                  <arg label="c.docente2.nomeCompl" value="this[0].docente2.nomeCompl"/>
+                                  <arg label="c.idGChamada" value="this[0].idGChamada"/>
+                                  <arg label="c.observacao" value="this[0].observacao"/>
+                                </mutation>
+                                <field name="SELECT">this[0].docente2</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG7">
+                          <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="kr4:RLsRWdyfZ]G/ltdQ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">pIdMatricula</field>
+                          </block>
+                        </value>
+                        <value name="ARG9">
+                          <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="`v4eD-Us1,yn#-J#pcd~" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">pPresencaValida</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#aa2f00" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="f870cUl+|;+DuOHRci?k" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22PresencaAluno%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                          <arg name="PresencaAluno"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#0088ee" dependencyby=".lwTeJsQLQj7,+(ynr)L" id="2eyEZ5S?|^8tKHYW@=rA" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="K?3_p-IWmB/TMJMy@McQ" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-407" y="123">
+    <mutation>
+      <arg name="pIdPresenca"/>
+      <arg name="pPresente"/>
+    </mutation>
+    <field name="NAME">EfetuarChamada</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="tC?o#ZF.FPa5xk[|w:n}" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">vQueryPresencaAluno</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="O)[|_FAo*T+_KSv@N$D;" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22p%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22p%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22p.idGPresencaAluno%22,%22field%22:%22p.idGPresencaAluno%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:idGPresencaAluno%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22select%20p%20from%20PresencaAluno%20p%20where%20p.idGPresencaAluno%20=%20:idGPresencaAluno%22,%22queryMode%22:%22object%22,%22params%22:%22%5B%5C%22idGPresencaAluno%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="idGPresencaAluno"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="i?461yCnU!X?CVB7(,s:" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">pIdPresenca</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="{Ztp@O_EklR1nsuGvqP4" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <value name="IF0">
+              <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="KYF`$^u2km_62M[L7Tr0" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="?)H;O,%b6qKK6u,inMH|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">vQueryPresencaAluno</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="Qba*OlJylj[4ekNLZ#ZP" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                <value name="VALUE">
+                  <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="(1eQAl?jg8R|iT*RbqY8" multilayer="false" namespace="cronapi.database.Operations.getActiveData" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20objeto%20da%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20objeto%20da%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getActiveData%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getActiveData%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.database.Operations.getActiveData}}" return-raw-type="cronapi.Var">
+                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="I([P?XZfznLOURP;iR];" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">vQueryPresencaAluno</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="i]p^!C)#SWq6vH3XtZn1" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                    <mutation else="1"/>
+                    <value name="IF0">
+                      <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="w9,AX-z2,edyE(Ho80eM" origintype="logic_operation" output="true" tooltip="Retorna verdadeiro se ambas as entradas forem iguais." type="logic_operation">
+                        <mutation items="2"/>
+                        <field name="OP1">OR</field>
+                        <value name="ARG0">
+                          <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="L#TNx]p0+Fa5`1pS`j$2" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNull" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNull%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNull%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.logic.Operations.isNull}}" return-raw-type="cronapi.Var">
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="r4c-D{}X5*;a{Q9e8*7K" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">pPresente</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ARG1">
+                          <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="c1|1hDpQh616U$fXA09p" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="?t;XSd1MtXve_vN1a)|," origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">pPresente</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="LZP3ouseEHs-5Z9GX{Nm" origintype="logic_boolean" output="true" tooltip="Retorna verdadeiro ou falso." type="logic_boolean">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="yCcz=K=kPjhyOi88Zm9J" multilayer="false" namespace="cronapi.object.Operations.setObjectField" origintype="procedures_set_field" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDefine%20valor%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20definir%20campo%20do%20objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3Cspan%3E%20-%20Valor%20a%20ser%20definido%20no%20objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_set_field">
+                        <mutation name="{{cronapi.object.Operations.setObjectField}}">
+                          <arg name="Objeto"/>
+                          <arg name="Caminho a percorrer"/>
+                          <arg name="Valor a ser definido no objeto"/>
+                        </mutation>
+                        <value name="PARAM0">
+                          <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id=":M3:.=h.BSM{vl2W%]K?" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                          </block>
+                        </value>
+                        <value name="PARAM1">
+                          <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="7q-/:+NMfwdMl0bkmrHV" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                            <mutation name="" return-raw-type="undefined"/>
+                            <field name="SELECT">dataHoraInvalidacao</field>
+                          </block>
+                        </value>
+                        <value name="PARAM2">
+                          <block colour="#7d9137" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="I)_zXou/%bTptD}1w=e6" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="ue)8*LIgb#Z;D)T-s%D]" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
+                            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22update%20PresencaAluno%20set%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22PresencaAluno%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.update}}">
+                              <arg name="PresencaAluno"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="I7SG,)4{$8_Trak5xSTa" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="%(}hpI}~k]a|{589rHV2" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                        <value name="IF0">
+                          <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="Roa_Gym7oWOi.hDuQJ|/" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                            <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="nJBvDHB[CegV`s}VRdso" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                  <arg name="Objeto"/>
+                                  <arg name="Caminho a percorrer"/>
+                                </mutation>
+                                <value name="PARAM0">
+                                  <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="q_Gt8u$sv#|6UQxQEGNq" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                                  </block>
+                                </value>
+                                <value name="PARAM1">
+                                  <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="ScJPr1eOc$5?JQ;7@/I#" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                    <mutation name="" return-raw-type="undefined"/>
+                                    <field name="SELECT">dataHoraAutomatica</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="{B`|BYA9*b1Kr-)9f.-Z" multilayer="false" namespace="cronapi.object.Operations.setObjectField" origintype="procedures_set_field" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDefine%20valor%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20definir%20campo%20do%20objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3Cspan%3E%20-%20Valor%20a%20ser%20definido%20no%20objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_set_field">
+                            <mutation name="{{cronapi.object.Operations.setObjectField}}">
+                              <arg name="Objeto"/>
+                              <arg name="Caminho a percorrer"/>
+                              <arg name="Valor a ser definido no objeto"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="JoVUwDZD:(?vqcm?HocG" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="A=#I%G^ZPX7PqAGN:O)K" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                <mutation name="" return-raw-type="undefined"/>
+                                <field name="SELECT">dataHoraManual</field>
+                              </block>
+                            </value>
+                            <value name="PARAM2">
+                              <block colour="#7d9137" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="}#^jBHvElP5b=}yXOBcJ" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                              </block>
+                            </value>
+                            <next>
+                              <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="RL1UW9^3|gh^K|D5tfo$" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
+                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22update%20PresencaAluno%20set%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22PresencaAluno%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.update}}">
+                                  <arg name="PresencaAluno"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id=".ahBA3F+AK@vzVL#mdz|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="2)GXfY+PJyWfUhsSn*$#" multilayer="false" namespace="cronapi.object.Operations.setObjectField" origintype="procedures_set_field" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDefine%20valor%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20definir%20campo%20do%20objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3Cspan%3E%20-%20Valor%20a%20ser%20definido%20no%20objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.setObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_set_field">
+                            <mutation name="{{cronapi.object.Operations.setObjectField}}">
+                              <arg name="Objeto"/>
+                              <arg name="Caminho a percorrer"/>
+                              <arg name="Valor a ser definido no objeto"/>
+                            </mutation>
+                            <value name="PARAM0">
+                              <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="3e..o.fOYjAgTQr{^}}-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                              </block>
+                            </value>
+                            <value name="PARAM1">
+                              <block colour="#c88330" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="fa@z$}]r8.a$4T-x9%5N" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                <mutation name="" return-raw-type="undefined"/>
+                                <field name="SELECT">dataHoraInvalidacao</field>
+                              </block>
+                            </value>
+                            <value name="PARAM2">
+                              <block colour="#5b80a5" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="qTJ7?!*N5,s1l@/,,03(" origintype="logic_null" output="true" tooltip="Retorna nulo." type="logic_null"/>
+                            </value>
+                            <next>
+                              <block colour="#aa2f00" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="zy`kQ{iZyjSmOqcKg._p" multilayer="false" namespace="cronapi.database.Operations.update" origintype="procedures_sql_update_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20um%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Entidade%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.update%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_update_callnoreturn">
+                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22update%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22update%20PresencaAluno%20set%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22PresencaAluno%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.update}}">
+                                  <arg name="PresencaAluno"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block colour="#0088ee" dependencyby="K?3_p-IWmB/TMJMy@McQ" id="AKczF-*%6ht].Sl6$w]C" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">vPresencaAluno&lt;saaa.entity.PresencaAluno&gt;</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-342" y="173">
+    <mutation>
+      <arg name="pIdAulaMinistrada"/>
+    </mutation>
+    <field name="NAME">ListarAlunos</field>
+    <comment h="80" pinned="false" w="160">ChamadaManualProfessor</comment>
+    <value name="RETURN">
+      <block colour="#aa2f00" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-}Q2y_~Y(c+M2CerFCAF" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PresencaAluno%22,%22namespace%22:%22saaa.entity.PresencaAluno%22,%22alias%22:%22p%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22p%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22p.chamada.aulaMinistrada.idGAulaMinistrada%22,%22field%22:%22p.chamada.aulaMinistrada.idGAulaMinistrada%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:chamadaAulaMinistradaIdGAulaMinistrada%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false%7D,%22entity%22:%22PresencaAluno%22,%22entityFullName%22:%22saaa.entity.PresencaAluno%22,%22filter%22:%22select%20p%20from%20PresencaAluno%20p%20where%20p.chamada.aulaMinistrada.idGAulaMinistrada%20=%20:chamadaAulaMinistradaIdGAulaMinistrada%22,%22queryMode%22:%22object%22,%22params%22:%22%5B%5C%22chamadaAulaMinistradaIdGAulaMinistrada%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+          <arg name="chamadaAulaMinistradaIdGAulaMinistrada"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="c6!@[nZE~{g{9K~`{o)L" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field name="VAR">pIdAulaMinistrada</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</blockly>

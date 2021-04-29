@@ -1,0 +1,61 @@
+{
+  "customId": "AgendaCompleta",
+  "queryName": "AgendaCompleta",
+  "sourceType": "entityFullName",
+  "entitySimpleName": "Agenda",
+  "entityFullName": "saaa.entity.Agenda",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Agenda",
+        "namespace": "saaa.entity.Agenda",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": true,
+    "paginatorAutomatic": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "POST": true,
+    "PUT": true,
+    "DELETE": true,
+    "FILTER": true,
+    "COUNT": true
+  },
+  "events": {},
+  "defaultValues": {},
+  "defaultValuesProperties": {},
+  "security": {},
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {
+    "Disciplina": {
+      "type": "String"
+    }
+  },
+  "errorHandles": {},
+  "serviceUrl": "api/cronapi/odata/v2/query793397/"
+}

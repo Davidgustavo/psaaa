@@ -1,0 +1,88 @@
+{
+  "onLogout": {
+    "type": "server",
+    "blockly": {
+      "namespace": "blockly.Acesso",
+      "sourcePath": "src/main/java/blockly/Acesso.blockly",
+      "language": "java",
+      "class": "blockly.Acesso",
+      "methods": [
+        {
+          "name": "FazerLogoff",
+          "hasReturn": "false",
+          "params": []
+        },
+        {
+          "name": "IncluirLogAcesso",
+          "hasReturn": "false",
+          "params": []
+        },
+        {
+          "name": "ObterUsuarioLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterProfessorLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterAlunoLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterUsuarioSistemaLogado",
+          "hasReturn": "true",
+          "params": []
+        }
+      ]
+    },
+    "blocklyMethod": "FazerLogoff",
+    "blocklyClass": "blockly.Acesso"
+  },
+  "onLogin": {
+    "type": "server",
+    "blockly": {
+      "namespace": "blockly.Acesso",
+      "sourcePath": "src/main/java/blockly/Acesso.blockly",
+      "language": "java",
+      "class": "blockly.Acesso",
+      "methods": [
+        {
+          "name": "FazerLogoff",
+          "hasReturn": "false",
+          "params": []
+        },
+        {
+          "name": "IncluirLogAcesso",
+          "hasReturn": "false",
+          "params": []
+        },
+        {
+          "name": "ObterUsuarioLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterProfessorLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterUsuarioSistemaLogado",
+          "hasReturn": "true",
+          "params": []
+        },
+        {
+          "name": "ObterAlunoLogado",
+          "hasReturn": "true",
+          "params": []
+        }
+      ]
+    },
+    "blocklyMethod": "IncluirLogAcesso",
+    "blocklyClass": "blockly.Acesso"
+  }
+}

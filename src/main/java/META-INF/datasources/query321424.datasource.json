@@ -1,0 +1,213 @@
+{
+  "customId": "query321424",
+  "queryName": "PresencasPorAula",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "PresencaAluno",
+  "entityFullName": "saaa.entity.PresencaAluno",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "PresencaAluno",
+        "namespace": "saaa.entity.PresencaAluno",
+        "alias": "p"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p.matricula.aluno.nomeAbrev",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.matricula.aluno.idAluno",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.chamada.aulaMinistrada.idGAulaMinistrada",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.dataHoraAutomatica",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.idGPresencaAluno",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.dataHoraInvalidacao",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.dataHoraManual",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.matricula.aluno.foto",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "p.chamada.aulaMinistrada.idGAulaMinistrada",
+          "field": "p.chamada.aulaMinistrada.idGAulaMinistrada",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":chamadaAulaMinistradaIdGAulaMinistrada",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "chamadaAulaMinistradaIdGAulaMinistrada",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onGetData": null
+  },
+  "defaultValues": {
+    "idGPresencaAluno": null,
+    "chamada": null,
+    "dataHoraRegistro": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeRegistro": null,
+    "longitudeRegistro": null,
+    "matricula": null,
+    "motivoInvalidacao": null,
+    "presencaValida": null,
+    "altitudeRegistro": null,
+    "dataHoraAutomatica": null,
+    "dataHoraManual": null,
+    "dataHoraInvalidacao": null
+  },
+  "defaultValuesProperties": {
+    "idGPresencaAluno": null,
+    "chamada": null,
+    "dataHoraRegistro": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeRegistro": null,
+    "longitudeRegistro": null,
+    "matricula": null,
+    "motivoInvalidacao": null,
+    "presencaValida": null,
+    "altitudeRegistro": null,
+    "dataHoraAutomatica": null,
+    "dataHoraManual": null,
+    "dataHoraInvalidacao": null
+  },
+  "security": {
+    "idGPresencaAluno": null,
+    "chamada": null,
+    "dataHoraRegistro": null,
+    "docente": null,
+    "docente2": null,
+    "latitudeRegistro": null,
+    "longitudeRegistro": null,
+    "matricula": null,
+    "motivoInvalidacao": null,
+    "presencaValida": null,
+    "altitudeRegistro": null,
+    "dataHoraAutomatica": null,
+    "dataHoraManual": null,
+    "dataHoraInvalidacao": null
+  },
+  "calcFields": {
+    "Presente": {
+      "blocklyClass": "blockly.CalcularPresencaFonteDados",
+      "blocklyMethod": "Calcular",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003csaaa.entity.PresencaAluno\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.CalcularPresencaFonteDados",
+        "sourcePath": "src/main/java/blockly/CalcularPresencaFonteDados.blockly",
+        "language": "java",
+        "class": "blockly.CalcularPresencaFonteDados",
+        "methods": [
+          {
+            "name": "Calcular",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u003csaaa.entity.PresencaAluno\u003e"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "calcFieldsSecurity": {
+    "Presente": null
+  },
+  "calcFieldsProperties": {
+    "Presente": {
+      "type": "Boolean"
+    }
+  },
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/saaa/query321424/"
+}

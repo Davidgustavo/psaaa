@@ -1,0 +1,427 @@
+{
+  "customId": "AgendaProf",
+  "queryName": "AgendaProfessor",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Agenda",
+  "entityFullName": "saaa.entity.Agenda",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Agenda",
+        "namespace": "saaa.entity.Agenda",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a.turma.disciplina.nome",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.aula",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "a.data",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "a.dependencia",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.descricao",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.diaSemana",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.docente",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.docente2",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.horaFim",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "a.horaInicio",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "a.idAgenda",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "a.motivoSubstituicao",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.turma",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.turno",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.dependencia.unidadeFisica.idUnidFisica",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.turma.qtdeAlunos",
+        "type": "double"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "a.data",
+        "order": "desc"
+      }
+    ],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "condition": "OR",
+          "rules": [
+            {
+              "id": "a.docente",
+              "field": "a.docente",
+              "type": "string",
+              "input": "text",
+              "operator": "equal",
+              "value": ":docente",
+              "valueIsField": false
+            },
+            {
+              "id": "a.docente2",
+              "field": "a.docente2",
+              "type": "string",
+              "input": "text",
+              "operator": "equal",
+              "value": ":docente",
+              "valueIsField": false
+            }
+          ],
+          "not": false
+        },
+        {
+          "id": "a.horaAbertura",
+          "field": "a.horaAbertura",
+          "type": "date",
+          "input": "text",
+          "operator": "is_null",
+          "value": null,
+          "valueIsField": false
+        },
+        {
+          "id": "a.data",
+          "field": "a.data",
+          "type": "date",
+          "input": "text",
+          "operator": "less_or_equal",
+          "value": ":data",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "docente",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterProfessorLogado",
+        "blocklyClass": "blockly.Acesso",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.Acesso",
+          "sourcePath": "src/main/java/blockly/Acesso.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterProfessorLogado",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fieldName": "data",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterDataAtual",
+        "blocklyClass": "blockly.EventoAcademico",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.EventoAcademico",
+          "sourcePath": "src/main/java/blockly/EventoAcademico.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ValidarLocalizacaoGeral",
+              "hasReturn": "true",
+              "params": [
+                "pIdDependencia",
+                "pAltitude",
+                "pLongitude",
+                "pLatitude"
+              ]
+            },
+            {
+              "name": "ValidarLocalizacaoExata",
+              "hasReturn": "true",
+              "params": [
+                "pCoordenadaDependencia",
+                "pPrecisaoCoordenada",
+                "pValorCoordenada"
+              ]
+            },
+            {
+              "name": "ObterDataAtual",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "VerificarAulaAberta",
+              "hasReturn": "true",
+              "params": [
+                "pIdAgenda"
+              ]
+            },
+            {
+              "name": "EnviarNotificacaoAlunos",
+              "hasReturn": "false",
+              "params": [
+                "pIdAgenda"
+              ]
+            },
+            {
+              "name": "Fechar",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "Abrir",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onGetData": null
+  },
+  "defaultValues": {
+    "idAgenda": null,
+    "aula": null,
+    "data": null,
+    "dependencia": null,
+    "descricao": null,
+    "diaSemana": null,
+    "docente": null,
+    "docente2": null,
+    "horaFim": null,
+    "horaInicio": null,
+    "motivoSubstituicao": null,
+    "turma": null,
+    "turno": null,
+    "horaAbertura": null,
+    "qtdeAlunos": null
+  },
+  "defaultValuesProperties": {
+    "idAgenda": null,
+    "aula": null,
+    "data": null,
+    "dependencia": null,
+    "descricao": null,
+    "diaSemana": null,
+    "docente": null,
+    "docente2": null,
+    "horaFim": null,
+    "horaInicio": null,
+    "motivoSubstituicao": null,
+    "turma": null,
+    "turno": null,
+    "horaAbertura": null,
+    "qtdeAlunos": null
+  },
+  "security": {
+    "idAgenda": null,
+    "aula": null,
+    "data": null,
+    "dependencia": null,
+    "descricao": null,
+    "diaSemana": null,
+    "docente": null,
+    "docente2": null,
+    "horaFim": null,
+    "horaInicio": null,
+    "motivoSubstituicao": null,
+    "turma": null,
+    "turno": null,
+    "horaAbertura": null,
+    "qtdeAlunos": null
+  },
+  "calcFields": {
+    "Teste": {
+      "blocklyClass": "blockly.Bloco",
+      "blocklyMethod": "Executar",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003csaaa.entity.Agenda\u003e",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.Bloco",
+        "sourcePath": "src/main/java/blockly/Bloco.blockly",
+        "language": "java",
+        "class": "blockly.Bloco",
+        "methods": [
+          {
+            "name": "Executar",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u003csaaa.entity.Agenda\u003e"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "TurmaQtdeAlunos": {
+      "type": "server",
+      "blocklyMethod": "GetTurmaQtdeAlunos",
+      "blocklyClass": "blockly.Bloco",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "pAgenda\u0026lt;saaa.entity.Agenda\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.Bloco",
+        "sourcePath": "src/main/java/blockly/Bloco.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Executar",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;saaa.entity.Agenda\u0026gt;"
+            ]
+          },
+          {
+            "name": "GetTurmaQtdeAlunos",
+            "hasReturn": "true",
+            "params": [
+              "pAgenda\u0026lt;saaa.entity.Agenda\u0026gt;"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "calcFieldsSecurity": {
+    "Teste": null,
+    "TurmaQtdeAlunos": null
+  },
+  "calcFieldsProperties": {
+    "Teste": {
+      "type": "String"
+    },
+    "TurmaQtdeAlunos": {
+      "type": "String"
+    }
+  },
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/saaa/query533703/"
+}

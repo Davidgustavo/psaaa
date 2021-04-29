@@ -1,0 +1,256 @@
+<h1 class="component-holder text-left h3" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-66161">PresencaAluno</h1>
+
+<datasource data-component="crn-datasource" filter="" name="PresencaAluno" entity="saaa.PresencaAluno" keys="idGPresencaAluno" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;idGPresencaAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;chamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraRegistro&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;latitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;longitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;motivoInvalidacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;presencaValida&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;altitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamada_chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula_sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;motivoInvalidacao&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+    <div ng-hide="PresencaAluno.inserting || PresencaAluno.editing" data-component="crn-textinput" id="crn-datasource-filter-general66161" class="">
+      <div class="form-group">
+        <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+        <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+      </div>
+    </div>
+
+<div ng-hide="PresencaAluno.editing || PresencaAluno.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+  <cron-grid
+      options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;PresencaAluno&quot;,&quot;entity&quot;:&quot;saaa.PresencaAluno&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.PresencaAluno&quot;,&quot;customId&quot;:&quot;PresencaAluno&quot;,&quot;name&quot;:&quot;PresencaAluno&quot;,&quot;customQueryName&quot;:&quot;saaa.PresencaAluno&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.PresencaAluno&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idGPresencaAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;chamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraRegistro&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;latitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;longitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;motivoInvalidacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;presencaValida&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;altitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamada_chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula_sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idGPresencaAluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;chamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraRegistro&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;latitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;longitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;motivoInvalidacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;presencaValida&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;altitudeRegistro&quot;,&quot;type&quot;:&quot;Double&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamada_chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;matricula_sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.PresencaAluno&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;motivoInvalidacao&quot;,&quot;headerText&quot;:&quot;Motivo Invalidacao&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;presencaValida&quot;,&quot;headerText&quot;:&quot;Presenca Valida&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}"
+      ng-model="vars.grid66161"
+      class=""
+      style="">
+  </cron-grid>
+</div>
+
+<div data-component="crn-form" id="crn-form-form-PresencaAluno-66161">
+  <div class="form" ng-show="PresencaAluno.editing || PresencaAluno.inserting">
+    <form crn-datasource="PresencaAluno" class="">
+      <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+        <button class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+      </div>
+      <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+        <button class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button>
+        <button class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+      </div>
+      <br/>
+      <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                <div data-component="crn-textinput" id="crn-textinput-motivoInvalidacao-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-motivoInvalidacao" class="">Motivo Invalidacao</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="500"
+                                            type="text"
+                                            ng-model="PresencaAluno.active.motivoInvalidacao"
+                                            class="form-control k-textbox"
+                                            id="textinput-motivoInvalidacao"
+                                            placeholder="Motivo Invalidacao"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-presencaValida-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-presencaValida" class="">Presenca Valida</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="1"
+                                            type="text"
+                                            ng-model="PresencaAluno.active.presencaValida"
+                                            class="form-control k-textbox"
+                                            id="textinput-presencaValida"
+                                            placeholder="Presenca Valida"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="ChamadaCombo" entity="saaa.Chamada" keys="idGChamada" schema="[{&quot;name&quot;:&quot;idGChamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aulaMinistrada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraFim&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraInicio&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;observacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulaMinistrada_observacoes&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-chamada-66161" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-chamada" class="">Chamada</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									required="required"
+                  id="enterprise-dynamic-combobox-chamada"
+                  name="enterprise-dynamic-combobox-chamada"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ChamadaCombo&quot;,&quot;entity&quot;:&quot;saaa.Chamada&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Chamada&quot;,&quot;customId&quot;:&quot;Chamada&quot;,&quot;name&quot;:&quot;ChamadaCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Chamada&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Chamada&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idGChamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aulaMinistrada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraFim&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraInicio&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;observacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulaMinistrada_observacoes&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idGChamada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aulaMinistrada&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;chamadaAutomatica&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraFim&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dataHoraInicio&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;observacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aulaMinistrada_observacoes&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente2_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;docente_nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Chamada&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;chamadaAutomatica&quot;,&quot;dataValueField&quot;:&quot;idGChamada&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="PresencaAluno.active.chamada"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-dataHoraRegistro-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-dataHoraRegistro" class="">Data Hora Registro</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="255"
+                                            type="date"
+                                            ng-model="PresencaAluno.active.dataHoraRegistro"
+                                            class="form-control k-textbox"
+                                            id="textinput-dataHoraRegistro"
+                                            placeholder="Data Hora Registro"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="DocenteCombo" entity="saaa.Docente" keys="idNumFunc" schema="[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-docente-66161" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-docente" class="">Docente</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									required="required"
+                  id="enterprise-dynamic-combobox-docente"
+                  name="enterprise-dynamic-combobox-docente"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;DocenteCombo&quot;,&quot;entity&quot;:&quot;saaa.Docente&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Docente&quot;,&quot;customId&quot;:&quot;Docente&quot;,&quot;name&quot;:&quot;DocenteCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Docente&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Docente&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Docente&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;nomeAbrev&quot;,&quot;dataValueField&quot;:&quot;idNumFunc&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="PresencaAluno.active.docente"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="Docente 2Combo" entity="saaa.Docente" keys="idNumFunc" schema="[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-docente2-66161" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-docente2" class="">Docente 2</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									
+                  id="enterprise-dynamic-combobox-docente2"
+                  name="enterprise-dynamic-combobox-docente2"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;DocenteCombo&quot;,&quot;entity&quot;:&quot;saaa.Docente&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Docente&quot;,&quot;customId&quot;:&quot;Docente&quot;,&quot;name&quot;:&quot;DocenteCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Docente&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Docente&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idNumFunc&quot;,&quot;type&quot;:&quot;Int64&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;nomeAbrev&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomeCompl&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Docente&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;nomeAbrev&quot;,&quot;dataValueField&quot;:&quot;idNumFunc&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="PresencaAluno.active.docente2"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-idGPresencaAluno-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-idGPresencaAluno" class="">Id G Presenca Aluno</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="36"
+                                            type="text"
+                                            ng-model="PresencaAluno.active.idGPresencaAluno"
+                                            class="form-control k-textbox"
+                                            id="textinput-idGPresencaAluno"
+                                            placeholder="Id G Presenca Aluno"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-latitudeRegistro-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-latitudeRegistro" class="">Latitude Registro</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="255"
+                                            type="number"
+                                            ng-model="PresencaAluno.active.latitudeRegistro"
+                                            class="form-control k-textbox"
+                                            id="textinput-latitudeRegistro"
+                                            placeholder="Latitude Registro"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-longitudeRegistro-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-longitudeRegistro" class="">Longitude Registro</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="255"
+                                            type="number"
+                                            ng-model="PresencaAluno.active.longitudeRegistro"
+                                            class="form-control k-textbox"
+                                            id="textinput-longitudeRegistro"
+                                            placeholder="Longitude Registro"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+                    <datasource data-component="crn-datasource" name="MatriculaCombo" entity="saaa.Matricula" keys="idGMatricula" schema="[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy=true></datasource>
+
+
+                <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-matricula-66161" class="">
+                  <div class="form-group">
+                        <label for="enterprise-dynamic-combobox-matricula" class="">Matricula</label>
+ <!-- else for if !model.hasCronappFramework() -->
+								<cron-dynamic-select
+									required="required"
+                  id="enterprise-dynamic-combobox-matricula"
+                  name="enterprise-dynamic-combobox-matricula"
+                  options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;MatriculaCombo&quot;,&quot;entity&quot;:&quot;saaa.Matricula&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;saaa.Matricula&quot;,&quot;customId&quot;:&quot;Matricula&quot;,&quot;name&quot;:&quot;MatriculaCombo&quot;,&quot;customQueryName&quot;:&quot;saaa.Matricula&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;saaa.entity.Matricula&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;idGMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;aluno&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;sitMatricula&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;aluno_candidato&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;turma_turma&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;saaa.Matricula&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;sitMatricula&quot;,&quot;dataValueField&quot;:&quot;idGMatricula&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true}"
+                  ng-model="PresencaAluno.active.matricula"
+                  class="crn-select form-control">
+                </cron-dynamic-select>
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+
+
+                <div data-component="crn-textinput" id="crn-textinput-altitudeRegistro-66161" class="">
+                  <div class="form-group">
+                        <label for="textinput-altitudeRegistro" class="">Altitude Registro</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                <input
+                                            maxlength="255"
+                                            type="number"
+                                            ng-model="PresencaAluno.active.altitudeRegistro"
+                                            class="form-control k-textbox"
+                                            id="textinput-altitudeRegistro"
+                                            placeholder="Altitude Registro"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                         <!-- end if !model.hasCronappFramework() -->
+                  </div>
+                </div>
+        <!-- NtoN  -->
+        <!-- NtoN  end-->
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <!-- OneToN -->
+        <!-- OneToOne  end -->
+      </fieldset>
+    </form>
+    &ensp;
+  </div>
+</div>
+
+
